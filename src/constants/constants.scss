@@ -1,0 +1,13 @@
+$color_antiqueWhite: #faebd7;
+$color_orange: #ff7f50;
+$color_lightGrey: #808080;
+$color_grey: #1c1d24;
+$color_main: #131416;
+$color_dark: #0e0f10;
+@mixin button {
+    margin: 0 auto;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: 0.5s all;
+    cursor: pointer;
+}

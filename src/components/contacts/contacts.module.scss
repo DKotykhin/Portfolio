@@ -1,0 +1,43 @@
+@import 'constants/constants.scss';
+
+.contacts {
+    min-height: 100vh;
+    padding: 40px 0 0;
+    background-color: $color_grey;    
+    .contacts_title {
+        text-align: center;
+        font-family: Nunito;
+        margin-bottom: 80px;
+        font-size: 30px;
+        font-weight: 600;
+        color: $color_antiqueWhite;
+        @media (max-width: 600px) {
+            margin-bottom: 40px;
+        }
+    }
+    .contacts_block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: 996px) {
+            display: flex;
+            flex-direction: column;
+        }
+        .contacts_box {
+            display: flex;
+            align-items: center;
+            margin: 50px 0;
+            .contacts_text {
+                margin-left: 15px;
+                color: $color_antiqueWhite;
+                font-size: 1.2rem;
+                .contacts_link {
+                    margin-left: 10px;
+                    color: #808080;
+                    font-size: 1rem;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

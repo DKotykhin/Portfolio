@@ -1,0 +1,40 @@
+@import "constants/constants.scss";
+
+.navBar {
+    display: flex;
+    .logo {
+        display: block;
+        cursor: pointer;
+        margin-top: 8px;
+    }
+    .link {
+        cursor: pointer;
+    }
+    .activeLink {
+        color: $color_orange;
+        transition: 0.3s;
+    }
+    // .activeLink::after {
+    //     content: '';
+    //     width: 30%;
+    //     height: 2px;
+    //     background: $color_orange;
+    //     position: absolute;
+    //     bottom: -4px;
+    //     left: 18px;
+
+    // }
+}
+.drawer {
+    text-align: center;
+    .drawerLogo {
+        margin: 16px 0;
+    }
+    .drawerItems {
+        display: block;
+        padding: 8px 0;
+        .drawerLink {
+            cursor: pointer;
+        }
+    }
+}

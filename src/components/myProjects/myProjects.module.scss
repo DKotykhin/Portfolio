@@ -1,0 +1,15 @@
+@import 'constants/constants.scss';
+
+.projects {
+    min-height: 100vh;
+    padding: 40px 0;
+    background-color: $color_dark;
+    .title {
+        font-family: Nunito;
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 30px;
+        font-weight: 600;
+        color: $color_antiqueWhite;
+    }
+}

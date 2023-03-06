@@ -1,0 +1,59 @@
+@import "constants/constants.scss";
+
+.home {
+    padding-top: 64px;
+    height: 100vh;
+    color: $color_antiqueWhite;
+    background-color: $color_dark;
+    display: flex;
+    align-items: center;
+    .container {
+        padding-left: 30px;
+        div:first-child {
+            margin: 50px 0;
+        }
+        div:nth-child(3) {
+            color: $color_orange;
+        }
+        div {
+            font-size: 80px;
+            font-family: Nunito;
+            margin: 0;
+            @media (max-width: 1200px) {
+                font-size: 60px;
+            }
+            @media (max-width: 992px) {
+                font-size: 50px;
+            }
+            @media (max-width: 768px) {
+                font-size: 40px;
+                margin: 20px 0;
+            }
+            @media (max-width: 600px) {
+                font-size: 30px;
+                margin: 20px 0;
+            }
+        }
+        .button {
+            font-size: 25px;
+            display: inline;
+            padding: 15px 25px;
+            border: 1px solid $color_orange;
+            border-radius: 5px;
+            color: $color_orange;
+            cursor: pointer;
+            @media (max-width: 992px) {
+                padding: 10px 15px;
+            }
+            @media (max-width: 768px) {
+                padding: 5px 10px;
+                font-size: 20px;
+            }
+        }
+        .button:hover {
+            border: 1px solid $color_antiqueWhite;
+            color: $color_antiqueWhite;
+            transition: 0.5s;
+        }
+    }
+}
