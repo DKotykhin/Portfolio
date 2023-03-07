@@ -18,10 +18,10 @@ const Skills: React.FC = () => {
                         <Typography className={styles.study_text}>
                             Kharkiv National University of Radioelectronics
                         </Typography>
-                        <Typography className={styles.study_text}>
+                        <Typography className={styles.study_subtext}>
                             Master's degree (09.1991 &#8208; 06.1996)
                         </Typography>
-                        <Typography className={styles.study_text}>
+                        <Typography className={styles.study_subtext}>
                             Electronic technics engeneer
                         </Typography>
                     </Box>
@@ -29,10 +29,10 @@ const Skills: React.FC = () => {
                         <Typography className={styles.study_text}>
                             International Institute of Business, Kyiv
                         </Typography>
-                        <Typography className={styles.study_text}>
+                        <Typography className={styles.study_subtext}>
                             Master's degree (09.2006 &#8208; 06.2008)
                         </Typography>
-                        <Typography className={styles.study_text}>
+                        <Typography className={styles.study_subtext}>
                             Master of Business Administration
                         </Typography>
                     </Box>
@@ -40,7 +40,7 @@ const Skills: React.FC = () => {
                         <Typography className={styles.study_text}>
                             The Language Gallery, London
                         </Typography>
-                        <Typography className={styles.study_text}>
+                        <Typography className={styles.study_subtext}>
                             English &#8208; B1 (08.2014)
                         </Typography>                        
                     </Box>
