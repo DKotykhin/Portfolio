@@ -1,6 +1,27 @@
 @import "constants/constants.scss";
 
 .home {
+    @keyframes animatedBackground {
+        from {
+            // opacity: 0;
+            background-color: black;
+        }
+        to {
+            // opacity: 1;
+            background-color: azure;
+        }
+    }
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+        url(../../images/background/Portfolio-background_1980.webp) center
+            center/cover no-repeat;
+    background-attachment: fixed;
+    // animation: animatedBackground 5s linear infinite alternate;
+    @media (max-width: 768px) {
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
+            url(../../images/background/Portfolio-background_600.webp) center
+                center/cover no-repeat;
+        background-attachment: scroll;
+    }
     padding-top: 64px;
     height: 100vh;
     color: $color_antiqueWhite;

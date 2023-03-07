@@ -4,65 +4,111 @@
     padding: 40px 0;
     background-color: $color_grey;
     min-height: 100vh;
-    .title {
-        font-family: Nunito;
-        text-align: center;
-        margin-bottom: 50px;
-        font-size: 2rem;
-        font-weight: 600;
-        color: $color_antiqueWhite;
-    }
-    .container {
+    .skills_container {
         display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        .item {
-            background-color: $color_dark;
-            margin: 15px;
+        justify-content: space-between;
+        // align-items: center;
+        @media (max-width: 1200px) {
+            flex-direction: column;
+            align-items: center;
+        }
+        .study_block {
+            color: $color_antiqueWhite;
+            padding: 10px;
+            height: 500px;
+            @media (min-width: 1200px) {
+                min-width: 450px;
+            }
+            @media (max-width: 1200px) {
+                height: auto;
+            }
+            .study_subtitle {
+                font-size: 2rem;
+                margin-bottom: 50px;
+            }
+            .study_textBox {
+                margin-bottom: 50px;
+                .study_text {
+                    font-size: 1.2rem;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .skills_block {
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 10px 20px;
-            position: relative;
-            img {
-                width: 100px;
-                height: 100px;
-            }
-            .itemTitle {
-                font-family: Nunito;
-                font-weight: 600;
+            // padding: 10px;
+            .skills_title {               
                 color: $color_antiqueWhite;
-                font-size: 1.2rem;
-                margin-top: 4px;
+                width: 650px;
+                text-align: right;
+                font-size: 2rem;
+                // padding: 0 30px;
+                @media (max-width: 1200px) {
+                    width: 470px;
+                    text-align: left;
+                }
+                @media (max-width: 600px) {
+                    width: auto;
+                }
             }
-        }
-        .item:before,
-        .item:after {
-            content: "";
-            position: absolute;
-            transition: all 0.4s;
-            width: 10%;
-            height: 15%;
-        }
-
-        .item:before {
-            border-bottom: 2px solid $color_orange;
-            border-left: 2px solid $color_orange;
-            bottom: -0px;
-            left: -0px;
-        }
-
-        .item:after {
-            border-top: 2px solid $color_orange;
-            border-right: 2px solid $color_orange;
-            top: -0px;
-            right: -0px;
-        }
-
-        .item:hover:before,
-        .item:hover:after {
-            width: 100%;
-            height: 100%;
+            .skills_box {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                @media (max-width: 1200px) {
+                    max-width: 520px;
+                }
+                .skills_item {
+                    background-color: $color_dark;
+                    margin: 15px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 10px 20px;
+                    position: relative;
+                    img {
+                        width: 100px;
+                        height: 100px;
+                    }
+                    .skills_itemTitle {
+                        font-family: Nunito;
+                        font-weight: 600;
+                        color: $color_antiqueWhite;
+                        font-size: 1.2rem;
+                        margin-top: 4px;
+                    }
+                }
+                .skills_item:before,
+                .skills_item:after {
+                    content: "";
+                    position: absolute;
+                    transition: all 0.4s;
+                    width: 10%;
+                    height: 15%;
+                }
+    
+                .skills_item:before {
+                    border-bottom: 2px solid $color_orange;
+                    border-left: 2px solid $color_orange;
+                    bottom: -0px;
+                    left: -0px;
+                }
+    
+                .skills_item:after {
+                    border-top: 2px solid $color_orange;
+                    border-right: 2px solid $color_orange;
+                    top: -0px;
+                    right: -0px;
+                }
+    
+                .skills_item:hover:before,
+                .skills_item:hover:after {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
         }
     }
 }
