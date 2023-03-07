@@ -2,10 +2,11 @@ import React from 'react';
 
 import { Box, Container, Typography } from '@mui/material';
 
+import ProjectCard from './ProjectCard';
 import { projectList } from './projectList';
 
 import styles from './myProjects.module.scss';
-import ProjectCard from './ProjectCard';
+
 
 const ProjectsBlock: React.FC = () => {
     return (
@@ -19,9 +20,7 @@ const ProjectsBlock: React.FC = () => {
                         projectList.map(item => (
                             <Box key={item.title} className={styles.cards}>
                                 <ProjectCard
-                                    title={item.title}
-                                    subtitle={item.subtitle}
-                                    image={item.image}
+                                    {...item}
                                 />
                             </Box>
                         ))
@@ -30,6 +29,6 @@ const ProjectsBlock: React.FC = () => {
             </Container>
         </Box>
     )
-}
+};
 
 export default ProjectsBlock;

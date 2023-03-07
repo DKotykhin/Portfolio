@@ -1,0 +1,33 @@
+@import 'constants/constants.scss';
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    border: 1px solid $color_lightGrey;
+    padding: 25px;
+    background-color: $color_grey;
+    .title {
+        color: $color_antiqueWhite;
+        font-size: 1.25rem;
+        margin-bottom: 20px;
+    }
+    .description {
+        color: $color_lightGrey;
+        margin-top: 10px;
+    }
+    .link {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .link a {
+        color: $color_antiqueWhite;
+        text-decoration: none;
+    }
+    a:hover {
+        color: $color_orange;
+    }
+}
