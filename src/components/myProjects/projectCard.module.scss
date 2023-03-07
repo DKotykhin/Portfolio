@@ -1,0 +1,59 @@
+@import 'constants/constants.scss';
+
+.card {
+    width: 350px;
+    height: 400px;
+    background-color: $color_main;
+    color: $color_antiqueWhite;
+    padding: 25px;
+    position: relative;
+    .title {
+       font-size: 1.25rem;
+       margin-bottom: 10px; 
+    }
+    .subtitle {
+        margin-bottom: 20px;
+        color: $color_orange;
+    }
+    .button {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .button button {
+        color: $color_antiqueWhite;
+        z-index: 2;
+    }
+    button:hover {
+        color: $color_orange;
+    }
+
+}
+
+.card:before,
+.card:after {
+    position: absolute;
+    content: "";
+    transition: all .4s;
+    width: 10%;
+    height: 15%;
+}
+.card:before {
+    border-bottom: 2px solid $color_orange;
+    border-left: 2px solid $color_orange;
+    left: -0px;
+    bottom: -0px;
+}
+.card:after {
+    border-top: 2px solid $color_orange;
+    border-right: 2px solid $color_orange;
+    top: -0px;
+    right: -0px;
+}
+.card:hover:before {
+    width: 100%;
+    height: 100%;
+}
+.card:hover:after {
+    width: 100%;
+    height: 100%;
+}

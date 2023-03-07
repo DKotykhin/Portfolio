@@ -12,4 +12,12 @@
         font-weight: 600;
         color: $color_antiqueWhite;
     }
+    .cardsBox {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .cards {
+            margin: 15px;
+        }
+    }
 }
