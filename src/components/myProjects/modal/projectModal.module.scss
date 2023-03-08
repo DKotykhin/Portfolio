@@ -1,0 +1,65 @@
+@import 'constants/constants.scss';
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 650px;
+    border: 1px solid $color_lightGrey;
+    padding: 25px;
+    background-color: $color_grey;
+    border-radius: 20px;
+    @media (max-width: 768px) {
+        width: 90%;
+    }
+    .title {
+        color: $color_antiqueWhite;
+        font-size: 1.25rem;
+        margin-bottom: 20px;
+    }
+    img {
+        @media (max-width: 768px) {
+            max-width: 100%;
+        } 
+    }
+    .description {
+        color: $color_lightGrey;
+        margin: 10px 0 20px;
+        font-size: 0.9rem;
+    }
+    .tagBox {
+        display: flex;
+        flex-wrap: wrap;
+        .tag {
+            color: $color_orange;
+            font-size: 0.8rem;
+            padding: 3px 10px;
+            border: 1px solid $color_orange;
+            border-radius: 10px;
+            margin: 5px 10px 5px 0;
+        }
+    }
+    .linkBox {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 0.9rem;
+        .link {
+            display: flex;
+            align-items: center;
+            margin: 0 5px;
+            svg {
+                color: $color_antiqueWhite;
+            }
+        }
+    }
+    .linkBox a {
+        color: $color_antiqueWhite;
+        text-decoration: none;
+        margin-left: 8px;
+    }
+    a:hover {
+        color: $color_orange;
+    }
+}

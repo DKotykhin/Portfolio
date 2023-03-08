@@ -4,6 +4,8 @@ import { useForm, Controller } from "react-hook-form";
 
 import { Box, Input, Button, FormControl, FormHelperText, Typography, TextField } from "@mui/material";
 
+import { FormValidation } from './validation';
+
 import styles from './form.module.scss';
 
 interface IFormData {
@@ -17,17 +19,14 @@ const Form = () => {
     const {
         control,
         handleSubmit,
-        formState: { errors, isValid },
-        // reset,
-    } = useForm<IFormData>({
-        defaultValues: {
-            name: '',
-            email: '',
-            message: '',
-        }
-    });
+        formState: { errors },
+        reset,
+    } = useForm<IFormData>(FormValidation);
 
-    const onSubmit = (data: IFormData) => console.log(data);
+    const onSubmit = (data: IFormData) => {
+        reset();
+        console.log(data)
+    };
 
     return (
         <Box className={styles.container}>
@@ -64,7 +63,7 @@ const Form = () => {
                             render={({ field }) => (
                                 <Input
                                     {...field}
-                                    type="email"
+                                    type="text"
                                     placeholder="your email..."
                                     autoComplete="email"
                                     error={errors.email ? true : false}
@@ -84,16 +83,18 @@ const Form = () => {
                                     multiline
                                     maxRows={6}
                                     placeholder="your text..."
+                                    error={errors.message ? true : false}
                                     className={styles.textarea}
                                 />
                             )}
                         />
+                        <FormHelperText>{errors.message?.message}</FormHelperText>
                     </FormControl>
                 </Box>
 
                 <Button
                     className={styles.submit}
-                    disabled={!isValid}
+                    // disabled={!isValid}
                     type="submit"
                 >
                     Submit

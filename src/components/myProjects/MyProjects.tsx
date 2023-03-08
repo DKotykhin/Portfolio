@@ -2,8 +2,8 @@ import React from 'react';
 
 import { Box, Container, Typography } from '@mui/material';
 
-import ProjectCard from './ProjectCard';
-import { projectList } from './projectList';
+import ProjectCard from './card/ProjectCard';
+import { projectData } from './projectData';
 
 import styles from './myProjects.module.scss';
 
@@ -17,7 +17,7 @@ const ProjectsBlock: React.FC = () => {
                 </Typography>
                 <Box className={styles.cardsBox}>
                     {
-                        projectList.map(item => (
+                        projectData.map(item => (
                             <Box key={item.title} className={styles.cards}>
                                 <ProjectCard
                                     {...item}

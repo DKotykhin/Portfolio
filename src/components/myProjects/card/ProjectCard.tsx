@@ -2,17 +2,10 @@ import React from 'react';
 
 import { Box, Typography, Button } from '@mui/material';
 
-import styles from './projectCard.module.scss';
-import ProjectModal from './ProjectModal';
+import ProjectModal from '../modal/ProjectModal';
+import { ICard } from '../cardTypes';
 
-interface ICard {
-    title: string,
-    subtitle: string,
-    image: string,
-    openLink: string,
-    githubLink: string,
-    description: string,
-}
+import styles from './projectCard.module.scss';
 
 const ProjectCard: React.FC<ICard> = (props) => {
     const { title, subtitle, image } = props;
@@ -31,7 +24,7 @@ const ProjectCard: React.FC<ICard> = (props) => {
                 <Typography className={styles.subtitle}>
                     {subtitle}
                 </Typography>
-                <img src={image} alt={image} className={styles.image} />
+                <img src={image} alt={image} className={styles.image} width='350px' />
                 <Box className={styles.button}>
                     <Button onClick={handleClick}>See more...</Button>
                 </Box>

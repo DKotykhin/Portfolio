@@ -3,14 +3,20 @@
 .footer {
     background-color: $color_dark;
     .footer__social {
-        text-align: center;
         padding: 35px 0 20px 0;
-    }
-    .footer__social img {
-        margin: 0 20px;
-        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 350px;
         @media (max-width: 600px) {
-            width: 40px;
+            width: 300px;
+        }
+        svg {
+            color: $color_orange;
+            font-size: 50px;
+            @media (max-width: 600px) {
+                width: 45px;
+            }
         }
     }
     .footer__right {
