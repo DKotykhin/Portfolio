@@ -18,6 +18,7 @@ const ProjectModal: React.FC<IModal> = ({ open, handleClose, props }) => {
             onClose={handleClose}
         >
             <Box className={styles.modal}>
+                <Box onClick={handleClose} className={styles.close}>&times;</Box>
                 <Typography className={styles.title}>
                     {title}
                 </Typography>
