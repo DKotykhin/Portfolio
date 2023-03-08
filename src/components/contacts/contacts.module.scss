@@ -27,6 +27,11 @@
             display: flex;
             align-items: center;
             margin: 50px 0;
+            img {
+                @media (max-width: 600px) {
+                   width: 40px;
+                }  
+            }
             .contacts_text {
                 margin-left: 15px;
                 color: $color_antiqueWhite;

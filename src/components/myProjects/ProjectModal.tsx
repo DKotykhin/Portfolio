@@ -4,10 +4,6 @@ import { Box, Modal, Typography, Link } from '@mui/material';
 
 import styles from './projectModal.module.scss';
 
-const style = {
-    bgcolor: 'background.paper',
-    boxShadow: 24,
-};
 
 interface IModal {
     handleClose: () => void,
@@ -19,7 +15,7 @@ interface IModal {
         githubLink: string,
         description: string,
     }
-}
+};
 
 const ProjectModal: React.FC<IModal> = ({ open, handleClose, props }) => {
     const { title, image, description, openLink, githubLink } = props;
@@ -29,13 +25,11 @@ const ProjectModal: React.FC<IModal> = ({ open, handleClose, props }) => {
             open={open}
             onClose={handleClose}
         >
-            <Box sx={style} className={styles.modal}>
+            <Box className={styles.modal}>
                 <Typography className={styles.title}>
                     {title}
                 </Typography>
-                <Box>
-                    <img src={image} alt={image} />
-                </Box>
+                <img src={image} alt={image} />
                 <Typography className={styles.description}>
                     {description}
                 </Typography>

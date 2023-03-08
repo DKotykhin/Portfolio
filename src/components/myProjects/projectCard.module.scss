@@ -1,7 +1,7 @@
 @import 'constants/constants.scss';
 
 .card {
-    width: 350px;
+    width: auto;
     height: 400px;
     background-color: $color_main;
     color: $color_antiqueWhite;
@@ -14,6 +14,9 @@
     .subtitle {
         margin-bottom: 20px;
         color: $color_lightGrey;
+    }
+    img {
+        max-width: 100%;
     }
     .button {
         text-align: center;

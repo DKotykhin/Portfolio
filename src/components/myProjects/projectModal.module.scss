@@ -9,10 +9,18 @@
     border: 1px solid $color_lightGrey;
     padding: 25px;
     background-color: $color_grey;
+    @media (max-width: 600px) {
+        max-width: 90%;
+    }
     .title {
         color: $color_antiqueWhite;
         font-size: 1.25rem;
         margin-bottom: 20px;
+    }
+    img {
+        @media (max-width: 600px) {
+            max-width: 100%;
+        } 
     }
     .description {
         color: $color_lightGrey;
