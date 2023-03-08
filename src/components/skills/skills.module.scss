@@ -36,6 +36,14 @@
                     color: $color_lightGrey;
                 }
             }
+            .hobby_subtext {
+                padding-bottom: 10px;
+                color: $color_lightGrey;
+                max-width: 500px;
+                &:last-child {
+                    margin-bottom: 50px;
+                }
+            }
         }
         .skills_block {
             display: flex;

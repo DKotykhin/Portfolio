@@ -42,8 +42,23 @@ const Skills: React.FC = () => {
                         </Typography>
                         <Typography className={styles.study_subtext}>
                             English &#8208; B1 (08.2014)
-                        </Typography>                        
+                        </Typography>
                     </Box>
+                    <Typography className={styles.study_subtitle}>
+                        My Hobby
+                    </Typography>
+                    <Typography className={styles.hobby_subtext}>
+                        Learned programming ATmega and STM32 microprocessors. Studied the basics of C\C++
+                    </Typography>
+                    <Typography className={styles.hobby_subtext}>
+                        Interest in radioelectronic
+                    </Typography>
+                    <Typography className={styles.hobby_subtext}>
+                        Love to ride a bike
+                    </Typography>
+                    <Typography className={styles.hobby_subtext}>
+                        Love to travel
+                    </Typography>
                 </Box>
                 <Box className={styles.skills_block}>
                     <Typography className={styles.skills_title}>
