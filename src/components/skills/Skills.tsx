@@ -44,7 +44,7 @@ const Skills: React.FC = () => {
                             English &#8208; B2 (08.2014)
                         </Typography>
                     </Box>
-                    <Typography className={styles.study_subtitle}>
+                    <Typography className={styles.study_title}>
                         My Hobby
                     </Typography>
                     <Typography className={styles.hobby_subtext}>
