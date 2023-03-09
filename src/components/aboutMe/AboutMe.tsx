@@ -20,11 +20,11 @@ const AboutMe: React.FC = () => {
                             Dmytro Kotykhin
                         </Typography>
                         <Typography className={styles.about_position}>
-                            Front - End Developer
+                            Full - Stack Developer
                         </Typography>
                         <Typography className={styles.about_text}>
                             Open minded and well-organized software developer. Enthusiastically study
-                            Javascript, React, get great pleasure from programming and gaining new
+                            Javascript, React, GraphQL, Mongo DB and get a great pleasure from programming and gaining new
                             knowledge. Keen to join the development team, run as a Frontend or Fullstack
                             Developer.
                         </Typography>

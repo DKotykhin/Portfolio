@@ -8,7 +8,7 @@ import gitIcon from "images/skillsIcons/github.svg";
 import sassIcon from "images/skillsIcons/sass.png";
 import graphqlIcon from "images/skillsIcons/graphql.webp";
 import nextjsIcon from "images/skillsIcons/nextjs.svg";
-import axiosIcon from "images/skillsIcons/axios.png";
+import nodejsIcon from "images/skillsIcons/nodejs.svg";
 import materialUiIcon from "images/skillsIcons/materialUi.png";
 import nestjsIcon from "images/skillsIcons/nestjs.svg";
 import apolloIcon from "images/skillsIcons/apollo.svg";
@@ -68,8 +68,8 @@ export const allSkills = [
     },
     {
         id: 11,
-        image: axiosIcon,
-        title: "Axios",
+        image: nodejsIcon,
+        title: "Node JS",
     },
     {
         id: 12,

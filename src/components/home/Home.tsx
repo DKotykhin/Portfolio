@@ -45,7 +45,7 @@ const Home: React.FC = () => {
                     variants={variants}
                     custom={3}
                 >
-                    Front - End Developer
+                    Full - Stack Developer
                 </motion.div>
                 <motion.div
                     initial='hidden'
