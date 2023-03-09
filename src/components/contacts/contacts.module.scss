@@ -26,11 +26,10 @@
         .contacts_box {
             display: flex;
             align-items: center;
-            margin: 50px 0;
-            img {
-                @media (max-width: 600px) {
-                   width: 40px;
-                }  
+            margin: 50px 0;            
+            svg {
+                color: $color_orange;
+                font-size: 2.5rem;
             }
             .contacts_text {
                 margin-left: 15px;

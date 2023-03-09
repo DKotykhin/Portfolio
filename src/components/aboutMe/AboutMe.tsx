@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Container, Typography, Box, Link, Button } from '@mui/material';
 
-import myPhoto from "images/photo/photo_portfolio.webp";
+import myPhoto from "images/photo/photo_portfolio_500x666.webp";
 
 import styles from './aboutMe.module.scss';
 

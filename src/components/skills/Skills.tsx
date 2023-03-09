@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Box, Container, Typography } from '@mui/material';
 
-import { allSkills } from './skillsData';
+import { allSkills, ISkills } from './skillsData';
 
 import styles from './skills.module.scss';
 
@@ -66,7 +66,7 @@ const Skills: React.FC = () => {
                     </Typography>
                     <Box className={styles.skills_box}>
                         {
-                            allSkills.map((item => (
+                            allSkills.map(((item: ISkills) => (
                                 <Box key={item.id} className={styles.skills_item}>
                                     <img src={item.image} alt={item.title} />
                                     <Typography className={styles.skills_itemTitle}>

@@ -24,7 +24,7 @@ const ProjectCard: React.FC<ICard> = (props) => {
                 <Typography className={styles.subtitle}>
                     {subtitle}
                 </Typography>
-                <img src={image} alt={image} className={styles.image} width='350px' />
+                <img src={image} alt={image} className={styles.image} width='350px'/>
                 <Box className={styles.button}>
                     <Button onClick={handleClick}>See more...</Button>
                 </Box>

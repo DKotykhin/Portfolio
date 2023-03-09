@@ -18,7 +18,7 @@ const ProjectsBlock: React.FC = () => {
                 <Box className={styles.cardsBox}>
                     {
                         projectData.map(item => (
-                            <Box key={item.title} className={styles.cards}>
+                            <Box key={item.id} className={styles.cards}>
                                 <ProjectCard
                                     {...item}
                                 />

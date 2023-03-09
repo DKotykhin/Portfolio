@@ -1,21 +1,27 @@
-import reactIcon from "images/skillsIcons/react.png";
-import jsIcon from "images/skillsIcons/javascript.png";
 import htmlIcon from "images/skillsIcons/html5.png";
 import cssIcon from "images/skillsIcons/css3.png";
-import tsIcon from "images/skillsIcons/typescript.png";
+import jsIcon from "images/skillsIcons/javascript.png";
+import reactIcon from "images/skillsIcons/react.png";
 import reduxIcon from "images/skillsIcons/redux.png";
-import gitIcon from "images/skillsIcons/github.svg";
-import sassIcon from "images/skillsIcons/sass.png";
-import graphqlIcon from "images/skillsIcons/graphql.webp";
+import tsIcon from "images/skillsIcons/typescript.png";
 import nextjsIcon from "images/skillsIcons/nextjs.svg";
-import nodejsIcon from "images/skillsIcons/nodejs.svg";
-import materialUiIcon from "images/skillsIcons/materialUi.png";
+import graphqlIcon from "images/skillsIcons/graphql.webp";
 import nestjsIcon from "images/skillsIcons/nestjs.svg";
 import apolloIcon from "images/skillsIcons/apollo.svg";
-import mongodbIcon from "images/skillsIcons/mongodb.svg";
+import nodejsIcon from "images/skillsIcons/nodejs.svg";
+import gitIcon from "images/skillsIcons/github.svg";
+import sassIcon from "images/skillsIcons/sass.png";
+import materialUiIcon from "images/skillsIcons/materialUi.png";
 import hygraphIcon from "images/skillsIcons/hygraph.webp";
+import mongodbIcon from "images/skillsIcons/mongodb.svg";
 
-export const allSkills = [
+export interface ISkills {
+    id: number;
+    image: string;
+    title: string;
+}
+
+export const allSkills:Array<ISkills> = [
     {
         id: 1,
         image: htmlIcon,

@@ -18,6 +18,9 @@
                 width: 45px;
             }
         }
+        svg:hover {
+            transform: translateY(-3px);
+        }
     }
     .footer__right {
         color: $color_antiqueWhite;
