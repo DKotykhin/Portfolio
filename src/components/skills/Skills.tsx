@@ -11,7 +11,7 @@ const Skills: React.FC = () => {
         <Box id='skills' className={styles.skills}>
             <Container maxWidth='lg' className={styles.skills_container}>
                 <Box className={styles.study_block}>
-                    <Typography className={styles.study_subtitle}>
+                    <Typography className={styles.study_title}>
                         My Education
                     </Typography>
                     <Box className={styles.study_textBox}>

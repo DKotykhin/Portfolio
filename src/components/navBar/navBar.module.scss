@@ -7,12 +7,15 @@
         cursor: pointer;
         margin-top: 8px;
     }
+    .logo:hover {
+        transform: scale(1.2);
+        transition: .5s;
+    }
     .link {
         cursor: pointer;
     }
     .activeLink {
         color: $color_orange;
-        transition: 0.3s;
     }
 }
 .drawer {

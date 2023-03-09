@@ -1,18 +1,43 @@
 import React from 'react';
 
+import { motion } from 'framer-motion';
+
 import { Container, Typography, Box, Link, Button } from '@mui/material';
 
 import myPhoto from "images/photo/photo_portfolio_500x666.webp";
 
 import styles from './aboutMe.module.scss';
 
+
 const AboutMe: React.FC = () => {
+
+    const variants = {
+        visible: {
+            opacity: 1,
+            scale: 1,
+            transition: {
+                delay: .5,
+                duration: 1
+            }
+        },
+        hidden: { opacity: 0, scale: 0 }
+    };
+
     return (
         <Box id='aboutMe' className={styles.about}>
             <Container maxWidth='lg'>
-                <Typography className={styles.about_title}>
+                <motion.div
+                    initial='hidden'
+                    whileInView='visible'
+                    variants={variants}
+                    viewport={{ once: true }}
+                    className={styles.about_title}
+                >
                     About Me
-                </Typography>
+                </motion.div>
+                {/* <Typography className={styles.about_title}>
+                    About Me
+                </Typography> */}
                 <Box className={styles.about_block}>
                     <img className={styles.about_img} src={myPhoto} alt='myPhoto' width='500px' />
                     <Box className={styles.about_desc}>

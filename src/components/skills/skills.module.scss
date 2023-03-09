@@ -1,9 +1,9 @@
 @import "constants/constants.scss";
 
 .skills {
-    padding: 40px 0;
+    min-height: calc(100vh - 64px);
+    padding: 40px 0 20px;
     background-color: $color_grey;
-    min-height: 100vh;
     .skills_container {
         display: flex;
         justify-content: space-between;
@@ -22,9 +22,9 @@
             @media (max-width: 1200px) {
                 height: auto;
             }
-            .study_subtitle {
+            .study_title {
                 font-size: 2rem;
-                margin-bottom: 50px;
+                margin-bottom: 40px;
             }
             .study_textBox {
                 margin-bottom: 50px;
@@ -41,7 +41,7 @@
                 color: $color_lightGrey;
                 max-width: 500px;
                 &:last-child {
-                    margin-bottom: 50px;
+                    margin-bottom: 20px;
                 }
             }
         }
@@ -55,7 +55,7 @@
                 width: 650px;
                 text-align: right;
                 font-size: 2rem;
-                // padding: 0 30px;
+                margin-bottom: 30px;
                 @media (max-width: 1200px) {
                     width: 470px;
                     text-align: left;

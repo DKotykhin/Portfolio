@@ -1,27 +1,26 @@
 @import 'constants/constants.scss';
 
 .contacts {
-    min-height: 100vh;
-    padding: 40px 0 0;
+    min-height: calc(100vh - 64px);    
     background-color: $color_grey;    
     .contacts_title {
         text-align: center;
         font-family: Nunito;
-        margin-bottom: 80px;
+        padding: 40px 0;
         font-size: 30px;
         font-weight: 600;
         color: $color_antiqueWhite;
-        @media (max-width: 600px) {
-            margin-bottom: 40px;
-        }
     }
     .contacts_block {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
-        @media (max-width: 1200px) {
+        height: calc(100vh - 250px);
+        @media (max-width: 1200px) or (max-height: 768px) {
             display: flex;
             flex-direction: column;
+            align-items: center;
+            height: auto;
         }
         .contacts_box {
             display: flex;
