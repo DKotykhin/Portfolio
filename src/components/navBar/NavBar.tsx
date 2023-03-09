@@ -36,7 +36,7 @@ const NavBar = (props: Props) => {
             <Box className={styles.drawerLogo}>
                 <img src={logo} alt='logo' />
             </Box>
-            <Divider />
+            <Divider className={styles.divider}/>
             {navItems.map((item) => (
                 <Box key={item.id} className={styles.drawerItems}>
                     <Link

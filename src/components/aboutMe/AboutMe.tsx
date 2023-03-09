@@ -11,7 +11,7 @@ const AboutMe: React.FC = () => {
         <Box id='aboutMe' className={styles.about}>
             <Container maxWidth='lg'>
                 <Typography className={styles.about_title}>
-                    AboutMe
+                    About Me
                 </Typography>
                 <Box className={styles.about_block}>
                     <img className={styles.about_img} src={myPhoto} alt='myPhoto' width='500px' />

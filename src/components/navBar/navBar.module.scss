@@ -14,25 +14,25 @@
         color: $color_orange;
         transition: 0.3s;
     }
-    // .activeLink::after {
-    //     content: '';
-    //     width: 30%;
-    //     height: 2px;
-    //     background: $color_orange;
-    //     position: absolute;
-    //     bottom: -4px;
-    //     left: 18px;
-
-    // }
 }
 .drawer {
     text-align: center;
+    background-color: $color_main;
+    min-height: 300px;
     .drawerLogo {
         margin: 16px 0;
     }
+    .divider {
+        background-color: #fff;
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 12px;
+    }
     .drawerItems {
         display: block;
-        padding: 8px 0;
+        padding: 6px 0;
+        color: #fff;
+        font-size: 1.2rem;
         .drawerLink {
             cursor: pointer;
         }
