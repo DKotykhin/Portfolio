@@ -46,13 +46,13 @@ const Form: React.FC = () => {
     const backdropHandleClose = () => setBackdropOpen(false)
 
     const onSubmit = (data: IFormData) => {
-        reset();
-        setSendError(false);
         // console.log(data);
+        setSendError(false);
         setBackdropOpen(true)
         const formData = form.current || "";
         emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formData, PUBLIC_KEY)
-        .then((result) => {
+            .then((result) => {
+                reset();
                 setSnackBarOpen(true);
                 setBackdropOpen(false);
                 console.log(result.text);
@@ -66,8 +66,8 @@ const Form: React.FC = () => {
 
     return (
         <Box className={styles.container}>
-            <SnackBar open={snackBarOpen} handleClose={snackBarhandleClose} error={sendError}/>
-            <SimpleBackdrop open={backdropOpen} handleClose={backdropHandleClose}/>
+            <SnackBar open={snackBarOpen} handleClose={snackBarhandleClose} error={sendError} />
+            <SimpleBackdrop open={backdropOpen} handleClose={backdropHandleClose} />
             <Typography className={styles.title}>
                 Contact with me
             </Typography>

@@ -53,7 +53,7 @@ const AboutMe: React.FC = () => {
                             knowledge. Keen to join the development team, run as a Frontend or Fullstack
                             Developer.
                         </Typography>
-                        <Link href={require("cv/CV_Dmytro_Kotykhin.pdf")} download='CV_Dmytro_Kotykhin.pdf'>
+                        <Link href={require("cv/CV_Dmytro_Kotykhin.pdf")} download='CV_Dmytro_Kotykhin.pdf' target='_blank'>
                             <Button className={styles.about_button}>Download CV</Button>
                         </Link>
                     </Box>
