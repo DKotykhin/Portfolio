@@ -11,16 +11,18 @@ import './index.scss';
 
 const theme = createTheme({
     palette: {
-        // mode: 'dark',
         primary: {
             light: '#1c1d24',
             main: '#131416',
             dark: '#0e0f10',
-        },
-        secondary: {
-            main: '#ff7f50'
-        }
+        },        
     },
+    typography: {
+        fontFamily: [
+            "-apple-system", "BlinkMacSystemFont", "Nunito", "Roboto", "Oxygen",
+            'sans-serif'
+        ].join(','),
+    }
 });
 
 const root = ReactDOM.createRoot(

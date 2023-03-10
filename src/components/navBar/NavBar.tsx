@@ -7,7 +7,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 
 // import { Link as MUILink } from '@mui/material';
 // import { ReactComponent as Icon } from "images/logo-32x32.svg";
-import logo from 'images/logo/logo-32x32.png';
+import logo from 'images/logo/logo-192x192.svg';
 
 import styles from './navBar.module.scss';
 
@@ -34,7 +34,7 @@ const NavBar = (props: Props) => {
     const drawer = (
         <Box onClick={handleDrawerToggle} className={styles.drawer}>
             <Box className={styles.drawerLogo}>
-                <img src={logo} alt='logo' />
+                <img src={logo} alt='logo' width='40px' />
             </Box>
             <Divider className={styles.divider}/>
             {navItems.map((item) => (
@@ -60,7 +60,7 @@ const NavBar = (props: Props) => {
                     <Toolbar>
                         <Box className={styles.logo}>
                             <Link to='home' spy={true} smooth={true} duration={800}>
-                                <img src={logo} alt='logo' />
+                                <img src={logo} alt='logo' width='40px'/>
                             </Link>
                         </Box>
                         <IconButton
