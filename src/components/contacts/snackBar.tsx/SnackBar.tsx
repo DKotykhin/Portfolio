@@ -10,10 +10,14 @@ const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(props,
 
 interface ISnackBar {
     open: boolean;
+    error: boolean;
     handleClose: (arg0: React.SyntheticEvent | Event) => void;
 };
 
-const SnackBar: React.FC<ISnackBar> = ({ open, handleClose }) => {
+const SnackBar: React.FC<ISnackBar> = ({ open, handleClose, error }) => {
+
+    const severity = error ? 'error' : 'success';
+    const message = error ? 'Something goes wrong' : 'Your message successfully sent'
 
     const action = (
         <IconButton
@@ -34,8 +38,8 @@ const SnackBar: React.FC<ISnackBar> = ({ open, handleClose }) => {
             action={action}
             anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
         >
-            <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
-                Your message successfully sent
+            <Alert onClose={handleClose} severity={severity} sx={{ width: '100%' }}>
+                {message}
             </Alert>
         </Snackbar>
     );

@@ -6,9 +6,10 @@ import emailjs from '@emailjs/browser';
 import { Box, Input, Button, FormControl, FormHelperText, Typography, TextField } from "@mui/material";
 
 import { FormValidation } from './validation';
+import SnackBar from '../snackBar.tsx/SnackBar';
+import SimpleBackdrop from '../backdrop/Backdrop';
 
 import styles from './form.module.scss';
-import SnackBar from '../snackBar.tsx/SnackBar';
 
 interface IFormData {
     name: string,
@@ -22,7 +23,9 @@ const PUBLIC_KEY = process.env.REACT_APP_EMAIL_PUBLIC_KEY || "";
 
 const Form: React.FC = () => {
 
-    const [open, setOpen] = React.useState(false);
+    const [snackBarOpen, setSnackBarOpen] = React.useState(false);
+    const [backdropOpen, setBackdropOpen] = React.useState(false);
+    const [sendError, setSendError] = React.useState(false);
     const form = useRef();
 
     const {
@@ -32,30 +35,39 @@ const Form: React.FC = () => {
         reset,
     } = useForm<IFormData>(FormValidation);
 
-    const handleClose = (event: React.SyntheticEvent | Event, reason?: string) => {
+    const snackBarhandleClose = (event: React.SyntheticEvent | Event, reason?: string) => {
         if (reason === 'clickaway') {
-            setOpen(false);
+            setSnackBarOpen(false);
             // return;
         }
-        setOpen(false);
+        setSnackBarOpen(false);
     };
+
+    const backdropHandleClose = () => setBackdropOpen(false)
 
     const onSubmit = (data: IFormData) => {
         reset();
-        console.log(data);
-        setOpen(true)
+        setSendError(false);
+        // console.log(data);
+        setBackdropOpen(true)
         const formData = form.current || "";
         emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formData, PUBLIC_KEY)
-            .then((result) => {
+        .then((result) => {
+                setSnackBarOpen(true);
+                setBackdropOpen(false);
                 console.log(result.text);
             }, (error) => {
                 console.log(error.text);
+                setBackdropOpen(false);
+                setSendError(true);
+                setSnackBarOpen(true);
             });
     };
 
     return (
         <Box className={styles.container}>
-            <SnackBar open={open} handleClose={handleClose} />
+            <SnackBar open={snackBarOpen} handleClose={snackBarhandleClose} error={sendError}/>
+            <SimpleBackdrop open={backdropOpen} handleClose={backdropHandleClose}/>
             <Typography className={styles.title}>
                 Contact with me
             </Typography>
@@ -125,7 +137,6 @@ const Form: React.FC = () => {
                 >
                     Submit
                 </Button>
-
             </Box>
         </Box>
     )
