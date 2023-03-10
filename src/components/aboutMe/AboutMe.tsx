@@ -5,23 +5,12 @@ import { motion } from 'framer-motion';
 import { Container, Typography, Box, Link, Button } from '@mui/material';
 
 import myPhoto from "images/photo/photo_portfolio_500x666.webp";
+import { variants } from 'animation/variants';
 
 import styles from './aboutMe.module.scss';
 
 
 const AboutMe: React.FC = () => {
-
-    const variants = {
-        visible: {
-            opacity: 1,
-            scale: 1,
-            transition: {
-                delay: .5,
-                duration: 1
-            }
-        },
-        hidden: { opacity: 0, scale: 0 }
-    };
 
     return (
         <Box id='aboutMe' className={styles.about}>

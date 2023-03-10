@@ -63,8 +63,8 @@ export const projectData: Array<ICard> = [
         tags: [
             "React",
             "Typescript",
-            "React Hook Form",
             "React Scroll",
+            "React Hook Form",
             "Framer Motion",
             "MUI",
             "SASS",
