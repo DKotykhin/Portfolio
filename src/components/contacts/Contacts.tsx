@@ -10,6 +10,7 @@ import Form from './form/Form';
 
 import styles from './contacts.module.scss';
 
+
 const Contacts: React.FC = () => {
     return (
         <Box id='contacts' className={styles.contacts}>

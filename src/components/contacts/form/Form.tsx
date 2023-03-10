@@ -1,12 +1,14 @@
-import React from 'react';
-
+import React, { useRef } from 'react';
 import { useForm, Controller } from "react-hook-form";
+
+import emailjs from '@emailjs/browser';
 
 import { Box, Input, Button, FormControl, FormHelperText, Typography, TextField } from "@mui/material";
 
 import { FormValidation } from './validation';
 
 import styles from './form.module.scss';
+import SnackBar from '../snackBar.tsx/SnackBar';
 
 interface IFormData {
     name: string,
@@ -14,7 +16,14 @@ interface IFormData {
     message: string,
 }
 
-const Form = () => {
+const SERVICE_ID = process.env.REACT_APP_EMAIL_SERVICE_ID || "";
+const TEMPLATE_ID = process.env.REACT_APP_EMAIL_TEMPLATE_ID || "";
+const PUBLIC_KEY = process.env.REACT_APP_EMAIL_PUBLIC_KEY || "";
+
+const Form: React.FC = () => {
+
+    const [open, setOpen] = React.useState(false);
+    const form = useRef();
 
     const {
         control,
@@ -23,18 +32,36 @@ const Form = () => {
         reset,
     } = useForm<IFormData>(FormValidation);
 
+    const handleClose = (event: React.SyntheticEvent | Event, reason?: string) => {
+        if (reason === 'clickaway') {
+            setOpen(false);
+            // return;
+        }
+        setOpen(false);
+    };
+
     const onSubmit = (data: IFormData) => {
         reset();
-        console.log(data)
+        console.log(data);
+        setOpen(true)
+        const formData = form.current || "";
+        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formData, PUBLIC_KEY)
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
     };
 
     return (
         <Box className={styles.container}>
+            <SnackBar open={open} handleClose={handleClose} />
             <Typography className={styles.title}>
                 Contact with me
             </Typography>
             <Box
                 component="form"
+                ref={form}
                 onSubmit={handleSubmit(onSubmit)}
                 className={styles.form}
             >
@@ -94,7 +121,6 @@ const Form = () => {
 
                 <Button
                     className={styles.submit}
-                    // disabled={!isValid}
                     type="submit"
                 >
                     Submit
