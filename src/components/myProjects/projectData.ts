@@ -66,6 +66,7 @@ export const projectData: Array<ICard> = [
             "React Scroll",
             "React Hook Form",
             "Framer Motion",
+            "EmailJS",
             "MUI",
             "SASS",
             "Yup",

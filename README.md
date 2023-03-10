@@ -12,7 +12,16 @@ The best way to see my projects
 - Framer Motion for animation
 - React Hook Form for feedback form
 - Yup for validation
+- EmailJS for send email from form
 - Mobile friendly
+
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+`REACT_APP_EMAIL_SERVICE_ID`
+`REACT_APP_EMAIL_TEMPLATE_ID`
+`REACT_APP_EMAIL_PUBLIC_KEY`
 
 ## Deploy on Netlify
 
