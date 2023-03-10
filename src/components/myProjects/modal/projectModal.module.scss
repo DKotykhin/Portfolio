@@ -15,6 +15,11 @@
         max-height: 650px;
         overflow: scroll;
     }
+    @media (max-height: 768px) {
+        max-width: 90%;
+        max-height: 90%;
+        overflow: scroll;
+    }
     .close {
         position: absolute;
         color: $color_antiqueWhite;
