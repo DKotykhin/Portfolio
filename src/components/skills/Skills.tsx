@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { Box, Container, Typography } from '@mui/material';
 
 import { allSkills, ISkills } from './skillsData';
-import { variants } from 'animation/variants';
+import { titleVariant } from 'animation/variants';
 
 import styles from './skills.module.scss';
 
@@ -17,15 +17,12 @@ const Skills: React.FC = () => {
                     <motion.div
                         initial='hidden'
                         whileInView='visible'
-                        variants={variants}
+                        variants={titleVariant}
                         viewport={{ once: true }}
                         className={styles.study_title}
                     >
                         My Education
                     </motion.div>
-                    {/* <Typography className={styles.study_title}>
-                        My Education
-                    </Typography> */}
                     <Box className={styles.study_textBox}>
                         <Typography className={styles.study_text}>
                             Kharkiv National University of Radioelectronics
@@ -59,15 +56,12 @@ const Skills: React.FC = () => {
                     <motion.div
                         initial='hidden'
                         whileInView='visible'
-                        variants={variants}
+                        variants={titleVariant}
                         viewport={{ once: true }}
                         className={styles.study_title}
                     >
                         My Hobby
                     </motion.div>
-                    {/* <Typography className={styles.study_title}>
-                        My Hobby
-                    </Typography> */}
                     <Typography className={styles.hobby_subtext}>
                         Learned programming ATmega and STM32 microprocessors. Studied the basics of C\C++
                     </Typography>
@@ -85,15 +79,12 @@ const Skills: React.FC = () => {
                     <motion.div
                         initial='hidden'
                         whileInView='visible'
-                        variants={variants}
+                        variants={titleVariant}
                         viewport={{ once: true }}
                         className={styles.skills_title}
                     >
                         Skills
                     </motion.div>
-                    {/* <Typography className={styles.skills_title}>
-                        Skills
-                    </Typography> */}
                     <Box className={styles.skills_box}>
                         {
                             allSkills.map(((item: ISkills) => (

@@ -9,7 +9,7 @@ import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 
 import Form from './form/Form';
-import { variants } from 'animation/variants';
+import { titleVariant } from 'animation/variants';
 
 import styles from './contacts.module.scss';
 
@@ -21,15 +21,12 @@ const Contacts: React.FC = () => {
                 <motion.div
                     initial='hidden'
                     whileInView='visible'
-                    variants={variants}
+                    variants={titleVariant}
                     viewport={{ once: true }}
                     className={styles.contacts_title}
                 >
                     Contacts
                 </motion.div>
-                {/* <Typography className={styles.contacts_title}>
-                    Contacts
-                </Typography> */}
                 <Box className={styles.contacts_block}>
                     <Form />
                     <Box>

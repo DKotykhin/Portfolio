@@ -13,6 +13,8 @@
     }
     .link {
         cursor: pointer;
+        padding: 0 16px;
+        color: #fff;
     }
     .activeLink {
         color: $color_orange;
@@ -38,6 +40,7 @@
         font-size: 1.2rem;
         .drawerLink {
             cursor: pointer;
+            color: #fff;
         }
     }
 }

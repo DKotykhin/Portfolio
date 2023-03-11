@@ -5,8 +5,6 @@ import { Link } from 'react-scroll';
 import { AppBar, Box, Divider, Drawer, IconButton, Toolbar, Container } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 
-// import { Link as MUILink } from '@mui/material';
-// import { ReactComponent as Icon } from "images/logo-32x32.svg";
 import logo from 'images/logo/logo-192x192.svg';
 
 import styles from './navBar.module.scss';
@@ -36,7 +34,7 @@ const NavBar = (props: Props) => {
             <Box className={styles.drawerLogo}>
                 <img src={logo} alt='logo' width='40px' />
             </Box>
-            <Divider className={styles.divider}/>
+            <Divider className={styles.divider} />
             {navItems.map((item) => (
                 <Box key={item.id} className={styles.drawerItems}>
                     <Link
@@ -60,7 +58,7 @@ const NavBar = (props: Props) => {
                     <Toolbar>
                         <Box className={styles.logo}>
                             <Link to='home' spy={true} smooth={true} duration={800}>
-                                <img src={logo} alt='logo' width='40px'/>
+                                <img src={logo} alt='logo' width='40px' />
                             </Link>
                         </Box>
                         <IconButton
@@ -74,7 +72,7 @@ const NavBar = (props: Props) => {
                         </IconButton>
                         <Box sx={{ display: { xs: 'none', sm: 'flex' }, marginLeft: 'auto' }}>
                             {navItems.map((item) => (
-                                <Box key={item.id} sx={{ color: '#fff', px: 2 }}>
+                                <Box key={item.id}>
                                     <Link
                                         to={item.id} spy={true} smooth={true} offset={-64} duration={500}
                                         activeClass={styles.activeLink}
@@ -95,13 +93,8 @@ const NavBar = (props: Props) => {
                     variant="temporary"
                     open={mobileOpen}
                     onClose={handleDrawerToggle}
-                    ModalProps={{
-                        keepMounted: true,
-                    }}
-                    sx={{
-                        display: { xs: 'block', sm: 'none' },
-                        '& .MuiDrawer-paper': { boxSizing: 'border-box', width: '100%' },
-                    }}
+                    ModalProps={{ keepMounted: true }}
+                    sx={{ display: { xs: 'block', sm: 'none' } }}
                 >
                     {drawer}
                 </Drawer>

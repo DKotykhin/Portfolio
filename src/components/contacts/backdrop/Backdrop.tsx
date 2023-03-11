@@ -11,7 +11,7 @@ const SimpleBackdrop: React.FC<IBackdrop> = ({ open, handleClose }) => {
 
     return (
         <Backdrop
-            sx={{ color: '#dc965a', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+            sx={{ color: 'secondary.main', zIndex: (theme) => theme.zIndex.drawer + 1 }}
             open={open}
             onClick={handleClose}
         >

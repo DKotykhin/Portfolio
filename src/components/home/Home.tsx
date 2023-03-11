@@ -5,20 +5,11 @@ import { motion } from 'framer-motion';
 
 import { Container, Box } from '@mui/material';
 
+import { homeVariant } from 'animation/variants';
+
 import styles from './home.module.scss'
 
 const Home: React.FC = () => {
-
-    const variants = {
-        visible: (i: number) => ({
-            opacity: 1,
-            transition: {
-                delay: i * 1,
-                duration: 1
-            }
-        }),
-        hidden: { opacity: 0 }
-    };
 
     return (
         <Box id='home' className={styles.home}>
@@ -26,7 +17,7 @@ const Home: React.FC = () => {
                 <motion.div
                     initial='hidden'
                     animate='visible'
-                    variants={variants}
+                    variants={homeVariant}
                     custom={1}
                 >
                     Hello,
@@ -34,7 +25,7 @@ const Home: React.FC = () => {
                 <motion.div
                     initial='hidden'
                     animate='visible'
-                    variants={variants}
+                    variants={homeVariant}
                     custom={2}
                 >
                     I am Dmytro Kotykhin
@@ -42,7 +33,7 @@ const Home: React.FC = () => {
                 <motion.div
                     initial='hidden'
                     animate='visible'
-                    variants={variants}
+                    variants={homeVariant}
                     custom={3}
                 >
                     Full - Stack Developer
@@ -50,7 +41,7 @@ const Home: React.FC = () => {
                 <motion.div
                     initial='hidden'
                     animate='visible'
-                    variants={variants}
+                    variants={homeVariant}
                     custom={4}
                 >
                     <Box className={styles.button}>

@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { Container, Typography, Box, Link, Button } from '@mui/material';
 
 import myPhoto from "images/photo/photo_portfolio_500x666.webp";
-import { variants } from 'animation/variants';
+import { titleVariant } from 'animation/variants';
 
 import styles from './aboutMe.module.scss';
 
@@ -18,15 +18,12 @@ const AboutMe: React.FC = () => {
                 <motion.div
                     initial='hidden'
                     whileInView='visible'
-                    variants={variants}
+                    variants={titleVariant}
                     viewport={{ once: true }}
                     className={styles.about_title}
                 >
                     About Me
                 </motion.div>
-                {/* <Typography className={styles.about_title}>
-                    About Me
-                </Typography> */}
                 <Box className={styles.about_block}>
                     <img className={styles.about_img} src={myPhoto} alt='myPhoto' width='500px' />
                     <Box className={styles.about_desc}>

@@ -6,7 +6,7 @@ import { Box, Container } from '@mui/material';
 
 import ProjectCard from './card/ProjectCard';
 import { projectData } from './projectData';
-import { variants } from 'animation/variants';
+import { titleVariant } from 'animation/variants';
 
 import styles from './myProjects.module.scss';
 
@@ -18,15 +18,12 @@ const ProjectsBlock: React.FC = () => {
                 <motion.div
                     initial='hidden'
                     whileInView='visible'
-                    variants={variants}
+                    variants={titleVariant}
                     viewport={{ once: true }}
                     className={styles.title}
                 >
                     My Projects
                 </motion.div>
-                {/* <Typography className={styles.title}>
-                    My Projects
-                </Typography> */}
                 <Box className={styles.cardsBox}>
                     {
                         projectData.map(item => (
