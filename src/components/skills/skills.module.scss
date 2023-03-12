@@ -7,7 +7,6 @@
     .skills_container {
         display: flex;
         justify-content: space-between;
-        // align-items: center;
         @media (max-width: 1200px) {
             flex-direction: column;
             align-items: center;
@@ -28,15 +27,15 @@
             }
             .study_textBox {
                 margin-bottom: 50px;
-                .study_text {
+                .study_subtitle {
                     font-size: 1.2rem;
                     margin-bottom: 15px;
                 }
-                .study_subtext {
+                .study_text {
                     color: $color_lightGrey;
                 }
             }
-            .hobby_subtext {
+            .hobby_text {
                 padding-bottom: 10px;
                 color: $color_lightGrey;
                 max-width: 500px;
@@ -49,8 +48,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            // padding: 10px;
-            .skills_title {               
+            .skills_title {
                 color: $color_antiqueWhite;
                 width: 650px;
                 text-align: right;
@@ -99,21 +97,21 @@
                     width: 10%;
                     height: 15%;
                 }
-    
+
                 .skills_item:before {
                     border-bottom: 2px solid $color_orange;
                     border-left: 2px solid $color_orange;
                     bottom: -0px;
                     left: -0px;
                 }
-    
+
                 .skills_item:after {
                     border-top: 2px solid $color_orange;
                     border-right: 2px solid $color_orange;
                     top: -0px;
                     right: -0px;
                 }
-    
+
                 .skills_item:hover:before,
                 .skills_item:hover:after {
                     width: 100%;

@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 
 import { Box, Container } from '@mui/material';
@@ -12,6 +13,8 @@ import styles from './myProjects.module.scss';
 
 
 const ProjectsBlock: React.FC = () => {
+    const { t } = useTranslation('projects');
+
     return (
         <Box id='projects' className={styles.projects}>
             <Container maxWidth='lg'>
@@ -22,7 +25,7 @@ const ProjectsBlock: React.FC = () => {
                     viewport={{ once: true }}
                     className={styles.title}
                 >
-                    My Projects
+                    {t('title')}
                 </motion.div>
                 <Box className={styles.cardsBox}>
                     {

@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 
 import { Box, Container, Typography, Link } from '@mui/material';
@@ -15,6 +16,8 @@ import styles from './contacts.module.scss';
 
 
 const Contacts: React.FC = () => {
+    const { t } = useTranslation('contacts');
+
     return (
         <Box id='contacts' className={styles.contacts}>
             <Container maxWidth='lg'>
@@ -25,7 +28,7 @@ const Contacts: React.FC = () => {
                     viewport={{ once: true }}
                     className={styles.contacts_title}
                 >
-                    Contacts
+                    {t('title')}
                 </motion.div>
                 <Box className={styles.contacts_block}>
                     <Form />
@@ -33,7 +36,7 @@ const Contacts: React.FC = () => {
                         <Box className={styles.contacts_box}>
                             <LocalPhoneOutlinedIcon />
                             <Typography className={styles.contacts_text}>
-                                Phone:
+                                {t('tel')}
                                 <Link className={styles.contacts_link} href="tel:48721810244">+48 721 810 244</Link>
                             </Typography>
                         </Box>
@@ -47,7 +50,7 @@ const Contacts: React.FC = () => {
                         <Box className={styles.contacts_box}>
                             <LocationOnOutlinedIcon />
                             <Typography className={styles.contacts_text}>
-                                Address:
+                                {t('address')}
                                 <Link className={styles.contacts_link} href="https://goo.gl/maps/4zJGiVenVpuipotc7" target='_blank'>Warsaw, Poland</Link>
                             </Typography>
                         </Box>

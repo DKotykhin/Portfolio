@@ -11,12 +11,15 @@ export const projectData: Array<ICard> = [
     {
         id: 1,
         title: "CoffeeDoor",
-        subtitle: "Coffee and Tea Online Shop",
+        subtitleEn: "Coffee and Tea Online Shop",
+        subtitleUkr: "Онлайн магазин кави та чаю",
         image: coffeedoor,
         openLink: "https://coffeedoor.space",
         githubLink: "https://github.com/DKotykhin/Coffeedoor-next-Hygraph",
-        description:
+        descriptionEn:
             "Three languages online coffee, tea and accessories store with Next JS for SSR rendering. Use Hygraph CMS for content placing. Mobile friendly.",
+        descriptionUkr:
+            "Онлайн магазин кави, чаю та кавових аксесуарів. Підтримує три мови. Використовує Next JS для SSR рендерингу. Адаптивний слайдер для товарів. Контент розміщений за допомогою Hygraph CMS. Адаптивний дизайн.",
         tags: [
             "React",
             "Next JS",
@@ -33,12 +36,15 @@ export const projectData: Array<ICard> = [
     {
         id: 2,
         title: "Todolist",
-        subtitle: "Easy Todo App",
+        subtitleEn: "Easy Todo App",
+        subtitleUkr: "Застосунок для ваших справ",
         image: todolist,
         openLink: "https://mytodolist.fun",
         githubLink: "https://github.com/DKotykhin/TodoList-Frontend-RTK-Query",
-        description:
-            "Easy TodoList with full CRUD operations for users and their tasks. Nongo DB for a database. User login/logout, delete and registration. Validation all fields. Sort, search for task. Full description in gitHub.",
+        descriptionEn:
+            "Easy TodoList with full CRUD operations for users and their tasks. Mongo DB for a database. User login/logout, delete and registration. Validation all fields. Sort, search for task. Full description in gitHub.",
+        descriptionUkr:
+            "Простий застосунок для керування справами. Підтримує повний цикл CRUD операцій для користувачів та їх справ. База даних на Mongo DB. Вхід, вихід, реєстрація та видалення користувачів. Валідація всіх форм. Сортування, пошук для справ. Повний опис на gitHub.",
         tags: [
             "React",
             "Redux",
@@ -54,12 +60,15 @@ export const projectData: Array<ICard> = [
     {
         id: 3,
         title: "Portfolio",
-        subtitle: "Dmytro Kotykhin Portfolio",
+        subtitleEn: "My Portfolio Project",
+        subtitleUkr: "Проект мого портфоліо",
         image: portfolio,
         openLink: "https://dmytro-kotykhin.netlify.app",
         githubLink: "https://github.com/DKotykhin/Portfolio",
-        description:
+        descriptionEn:
             "This 2-languages SPA helps introduce my skills in professional way. It's a simply way to see my own projects",
+        descriptionUkr:
+            "Застосунок допомагає предстваити мій професійний досвід. Підтримує дві мови. Найпростіший спосіб подивитися мої проекти",
         tags: [
             "React",
             "Typescript",
@@ -75,12 +84,15 @@ export const projectData: Array<ICard> = [
     {
         id: 4,
         title: "Express JS Backend for TodoList",
-        subtitle: "Connect Frontend App with MongoDB",
+        subtitleEn: "Connect Frontend App with MongoDB",
+        subtitleUkr: "Поєднує клієнтську частину з базою MongoDB",
         image: expressback,
         openLink: "https://todolist-new17.herokuapp.com/",
         githubLink: "https://github.com/DKotykhin/TodoList-Backend-Express",
-        description:
-            "The backent app helps to connect frontend with MongoDB database. Provides full CRUD operations for users and tasks. Helps organize pagination, sort and search task by paticular parameters. Build with Node JS ang ExpressJS.",
+        descriptionEn:
+            "The backend app helps to connect frontend with MongoDB database. Provides full CRUD operations for users and tasks. Helps organize pagination, sort and search task by paticular parameters. Build with Node JS and ExpressJS.",
+        descriptionUkr:
+            "Цей бекенд застосунок допомагає поєднати клієнтську частину з базою даних MongoDB. Підтримує повний перелік CRUD операцій для користувачів та їх справ. Допомагає організувати пагінацію, сортування та пошук справ за певними параметрами. Зроблений на Node JS з використанням ExpressJS.",
         tags: [
             "Node JS",
             "Express JS",
@@ -94,12 +106,15 @@ export const projectData: Array<ICard> = [
     {
         id: 5,
         title: "Apollo JS Backend for TodoList",
-        subtitle: "Connect Frontend App with MongoDB",
+        subtitleEn: "Connect Frontend App with MongoDB",
+        subtitleUkr: "Поєднує клієнтську частину з базою MongoDB",
         image: apolloback,
         openLink: "https://todolist-new19.herokuapp.com/graphql",
         githubLink: "https://github.com/DKotykhin/TodoList-Backend-Apollo",
-        description:
-            "The backent app helps to connect frontend with MongoDB database. Provides full CRUD operations for users and tasks. Helps organize pagination, sort and search task by paticular parameters. Build with Apollo Server v4.",
+        descriptionEn:
+            "The backend app helps to connect frontend with MongoDB database. Provides full CRUD operations for users and tasks. Helps organize pagination, sort and search task by paticular parameters. Build with Node JS and Apollo Server v4.",
+        descriptionUkr:
+            "Цей бекенд застосунок допомагає поєднати клієнтську частину з базою даних MongoDB. Підтримує повний перелік CRUD операцій для користувачів та їх справ. Допомагає організувати пагінацію, сортування та пошук справ за певними параметрами. Зроблений на Node JS з використанням Apollo Server v4.",
         tags: [
             "Node JS",
             "Express JS",
@@ -113,12 +128,15 @@ export const projectData: Array<ICard> = [
     {
         id: 6,
         title: "Nest JS Backend for TodoList",
-        subtitle: "Connect Frontend App with MongoDB",
+        subtitleEn: "Connect Frontend App with MongoDB",
+        subtitleUkr: "Поєднує клієнтську частину з базою MongoDB",
         image: nestback,
         openLink: "https://todolist-new20.herokuapp.com/",
         githubLink: "https://github.com/DKotykhin/TodoList-Backend-NestJS",
-        description:
-            "The backent app helps to connect frontend with MongoDB database. Provides full CRUD operations for users and tasks. Helps organize pagination, sort and search task by paticular parameters. Build with Nest JS",
+        descriptionEn:
+            "The backend app helps to connect frontend with MongoDB database. Provides full CRUD operations for users and tasks. Helps organize pagination, sort and search task by paticular parameters. Build with Nest JS.",
+        descriptionUkr:
+            "Цей бекенд застосунок допомагає поєднати клієнтську частину з базою даних MongoDB. Підтримує повний перелік CRUD операцій для користувачів та їх справ. Допомагає організувати пагінацію, сортування та пошук справ за певними параметрами. Зроблений на Nest JS.",
         tags: ["Node JS", "Nest JS", "Mongoose", "JWT", "Bcrypt"],
     },
 ];

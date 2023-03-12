@@ -1,5 +1,14 @@
 {
     "title_1": "My Education",
-    "title_2": "My Skills",
-    "title_3": "My Hobby"
+    "subtitle_11": "National University of Radioelectronics, Kharkiv, Ukraine",
+    "text_11": "Master's degree",
+    "text_12": "Electronic technics engeneer",
+    "subtitle_12": "International Institute of Business, Kyiv, Ukraine",
+    "text_13": "English",
+    "title_2": "My Hobby",
+    "text_21": "Learned programming ATmega and STM32 microprocessors. Studied the basics of C\\C++",
+    "text_22": "Interest in radioelectronic",
+    "text_23": "Love to ride a bike",
+    "text_24": "Love to travel",
+    "title_3": "My Skills"
 }

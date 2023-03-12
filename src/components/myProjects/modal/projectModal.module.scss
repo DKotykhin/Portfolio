@@ -1,4 +1,4 @@
-@import 'constants/constants.scss';
+@import "constants/constants.scss";
 
 .modal {
     position: absolute;
@@ -38,7 +38,7 @@
     img {
         @media (max-width: 768px) {
             max-width: 100%;
-        } 
+        }
     }
     .description {
         color: $color_lightGrey;
@@ -65,19 +65,18 @@
         .link {
             display: flex;
             align-items: center;
-            margin: 0 5px;
             svg {
                 color: $color_antiqueWhite;
             }
         }
-    }
-    .linkBox a {
-        color: $color_antiqueWhite;
-        text-decoration: none;
-        margin-left: 8px;
-    }
-    a:hover {
-        color: $color_orange;
-        transition: 0.4s;
+        a {
+            color: $color_antiqueWhite;
+            text-decoration: none;
+            margin: 0 5px 0 8px;
+        }
+        a:hover {
+            color: $color_orange;
+            transition: 0.4s;
+        }
     }
 }
