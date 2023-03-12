@@ -59,17 +59,17 @@ export const projectData: Array<ICard> = [
         openLink: "https://dmytro-kotykhin.netlify.app",
         githubLink: "https://github.com/DKotykhin/Portfolio",
         description:
-            "The SPA helps introduce my skills in professional way. It's a simply way to see my own projects",
+            "This 2-languages SPA helps introduce my skills in professional way. It's a simply way to see my own projects",
         tags: [
             "React",
             "Typescript",
             "React Scroll",
             "React Hook Form",
             "Framer Motion",
-            "EmailJS",
             "MUI",
+            "EmailJS",
             "SASS",
-            "Yup",
+            "i18next",
         ],
     },
     {

@@ -1,7 +1,8 @@
 import React from 'react';
 
-import { Box } from '@mui/system';
-import { Typography, Link, Container } from "@mui/material";
+import { useTranslation } from 'react-i18next';
+
+import { Typography, Link, Container, Box } from "@mui/material";
 
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TelegramIcon from '@mui/icons-material/Telegram';
@@ -10,6 +11,8 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import styles from './footer.module.scss';
 
 const Footer: React.FC = () => {
+    const { t } = useTranslation('footer');
+
     return (
         <Box className={styles.footer}>
             <Container className={styles.footer__social}>
@@ -24,7 +27,7 @@ const Footer: React.FC = () => {
                 </Link>
             </Container>
             <Typography className={styles.footer__right}>
-                Copyright &copy;2023 All rights reserved
+                &copy; 2023 {t('text')}
             </Typography>
         </Box>
     )

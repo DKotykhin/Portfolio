@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
@@ -11,6 +12,7 @@ import styles from './home.module.scss'
 
 const Home: React.FC = () => {
     const { t } = useTranslation('home');
+
     return (
         <Box id='home' className={styles.home}>
             <Container maxWidth='lg' className={styles.container}>

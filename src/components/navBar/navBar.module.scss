@@ -19,11 +19,22 @@
     .activeLink {
         color: $color_orange;
     }
+    .lang {
+        cursor: pointer;
+        margin: 0 8px;
+        padding: 0 8px;
+        color: $color_lightGrey;
+        border: 1px solid $color_lightGrey;
+        border-radius: 5px;
+    }
 }
 .drawer {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     background-color: $color_main;
-    min-height: 290px;
+    height: 340px;
     .drawerLogo {
         margin: 18px 0 10px;
     }
@@ -42,5 +53,15 @@
             cursor: pointer;
             color: #fff;
         }
+    }
+    .drawerLang {
+        cursor: pointer;
+        text-align: center;
+        width: 50px;
+        margin: 5px 0 20px;
+        padding: 0 8px;
+        color: $color_lightGrey;
+        border: 1px solid $color_lightGrey;
+        border-radius: 5px;
     }
 }

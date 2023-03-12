@@ -40,7 +40,7 @@ const ProjectModal: React.FC<IModal> = ({ open, handleClose, props }) => {
                     </Box>
                     <Box className={styles.link}>
                         <GitHubIcon />
-                        <Link href={githubLink} target='_blank'>Open gitHub</Link>
+                        <Link href={githubLink} target='_blank'>Open code</Link>
                     </Box>
                 </Box>
             </Box>

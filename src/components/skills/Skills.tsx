@@ -83,7 +83,7 @@ const Skills: React.FC = () => {
                         viewport={{ once: true }}
                         className={styles.skills_title}
                     >
-                        Skills
+                        My Skills
                     </motion.div>
                     <Box className={styles.skills_box}>
                         {

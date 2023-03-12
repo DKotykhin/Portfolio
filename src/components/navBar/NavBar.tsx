@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 import { Link } from 'react-scroll';
+import { useTranslation } from 'react-i18next';
 
 import { AppBar, Box, Divider, Drawer, IconButton, Toolbar, Container } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -13,17 +14,19 @@ interface Props {
     window?: () => Window;
 }
 
-const navItems = [
-    { title: "Home", id: "home" },
-    { title: "About Me", id: "aboutMe" },
-    { title: "Skills", id: "skills" },
-    { title: "Projects", id: "projects" },
-    { title: "Contacts", id: "contacts" },
-];
-
 const NavBar = (props: Props) => {
     const { window } = props;
+
     const [mobileOpen, setMobileOpen] = React.useState(false);
+    const { t, i18n } = useTranslation('navBar');
+
+    const navItems = [
+        { title: t("item_1"), id: "home" },
+        { title: t("item_2"), id: "aboutMe" },
+        { title: t("item_3"), id: "skills" },
+        { title: t("item_4"), id: "projects" },
+        { title: t("item_5"), id: "contacts" },
+    ];
 
     const handleDrawerToggle = () => {
         setMobileOpen((prevState) => !prevState);
@@ -46,6 +49,11 @@ const NavBar = (props: Props) => {
                     </Link>
                 </Box>
             ))}
+            {
+                i18n.language === 'en'
+                    ? <Box onClick={() => i18n.changeLanguage('ukr')} className={styles.drawerLang}>Ukr</Box>
+                    : <Box onClick={() => i18n.changeLanguage('en')} className={styles.drawerLang}>En</Box>
+            }
         </Box>
     );
 
@@ -66,11 +74,11 @@ const NavBar = (props: Props) => {
                             aria-label="open drawer"
                             edge="start"
                             onClick={handleDrawerToggle}
-                            sx={{ display: { sm: 'none' }, marginLeft: 'auto' }}
+                            sx={{ display: { md: 'none' }, marginLeft: 'auto' }}
                         >
                             <MenuIcon />
                         </IconButton>
-                        <Box sx={{ display: { xs: 'none', sm: 'flex' }, marginLeft: 'auto' }}>
+                        <Box sx={{ display: { xs: 'none', sm: 'none', md: 'flex' }, marginLeft: 'auto' }}>
                             {navItems.map((item) => (
                                 <Box key={item.id}>
                                     <Link
@@ -82,6 +90,11 @@ const NavBar = (props: Props) => {
                                     </Link>
                                 </Box>
                             ))}
+                            {
+                                i18n.language === 'en'
+                                    ? <Box onClick={() => i18n.changeLanguage('ukr')} className={styles.lang}>Ukr</Box>
+                                    : <Box onClick={() => i18n.changeLanguage('en')} className={styles.lang}>En</Box>
+                            }
                         </Box>
                     </Toolbar>
                 </Container>
@@ -94,7 +107,7 @@ const NavBar = (props: Props) => {
                     open={mobileOpen}
                     onClose={handleDrawerToggle}
                     ModalProps={{ keepMounted: true }}
-                    sx={{ display: { xs: 'block', sm: 'none' } }}
+                    sx={{ display: { sm: 'block', md: 'none' } }}
                 >
                     {drawer}
                 </Drawer>
