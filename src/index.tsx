@@ -7,6 +7,7 @@ import ThemeProvider from '@mui/material/styles/ThemeProvider';
 
 import App from './App';
 
+import './i18n';
 import './index.scss';
 
 const theme = createTheme({
@@ -20,7 +21,7 @@ const theme = createTheme({
             light: '#faebd7',
             main: '#dc965a',
             dark: '#808080',
-        }        
+        }
     },
     typography: {
         fontFamily: [

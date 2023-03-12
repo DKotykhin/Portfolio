@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 
 import { Box, Container, Typography } from '@mui/material';
@@ -10,6 +11,8 @@ import { titleVariant } from 'animation/variants';
 import styles from './skills.module.scss';
 
 const Skills: React.FC = () => {
+    const { t } = useTranslation('skills');
+
     return (
         <Box id='skills' className={styles.skills}>
             <Container maxWidth='lg' className={styles.skills_container}>
@@ -21,36 +24,36 @@ const Skills: React.FC = () => {
                         viewport={{ once: true }}
                         className={styles.study_title}
                     >
-                        My Education
+                        {t('title_1')}
                     </motion.div>
                     <Box className={styles.study_textBox}>
+                        <Typography className={styles.study_subtitle}>
+                            {t('subtitle_11')}
+                        </Typography>
                         <Typography className={styles.study_text}>
-                            Kharkiv National University of Radioelectronics
+                            {t('text_11')} (09.1991 &#8208; 06.1996)
                         </Typography>
-                        <Typography className={styles.study_subtext}>
-                            Master's degree (09.1991 &#8208; 06.1996)
-                        </Typography>
-                        <Typography className={styles.study_subtext}>
-                            Electronic technics engeneer
+                        <Typography className={styles.study_text}>
+                            {t('text_12')}
                         </Typography>
                     </Box>
                     <Box className={styles.study_textBox}>
-                        <Typography className={styles.study_text}>
-                            International Institute of Business, Kyiv
+                        <Typography className={styles.study_subtitle}>
+                            {t('subtitle_12')}
                         </Typography>
-                        <Typography className={styles.study_subtext}>
+                        <Typography className={styles.study_text}>
                             Master's degree (09.2006 &#8208; 06.2008)
                         </Typography>
-                        <Typography className={styles.study_subtext}>
-                            Master of Business Administration
+                        <Typography className={styles.study_text}>
+                            Master of Business Administration(Executive MBA)
                         </Typography>
                     </Box>
                     <Box className={styles.study_textBox}>
-                        <Typography className={styles.study_text}>
-                            The Language Gallery, London
+                        <Typography className={styles.study_subtitle}>
+                            The Language Gallery, London, UK
                         </Typography>
-                        <Typography className={styles.study_subtext}>
-                            English &#8208; B2 (08.2014)
+                        <Typography className={styles.study_text}>
+                            {t('text_13')} &#8208; B2 (08.2014)
                         </Typography>
                     </Box>
                     <motion.div
@@ -60,19 +63,19 @@ const Skills: React.FC = () => {
                         viewport={{ once: true }}
                         className={styles.study_title}
                     >
-                        My Hobby
+                        {t('title_2')}
                     </motion.div>
-                    <Typography className={styles.hobby_subtext}>
-                        Learned programming ATmega and STM32 microprocessors. Studied the basics of C\C++
+                    <Typography className={styles.hobby_text}>
+                        {t('text_21')}
                     </Typography>
-                    <Typography className={styles.hobby_subtext}>
-                        Interest in radioelectronic
+                    <Typography className={styles.hobby_text}>
+                        {t('text_22')}
                     </Typography>
-                    <Typography className={styles.hobby_subtext}>
-                        Love to ride a bike
+                    <Typography className={styles.hobby_text}>
+                        {t('text_23')}
                     </Typography>
-                    <Typography className={styles.hobby_subtext}>
-                        Love to travel
+                    <Typography className={styles.hobby_text}>
+                        {t('text_24')}
                     </Typography>
                 </Box>
                 <Box className={styles.skills_block}>
@@ -83,7 +86,7 @@ const Skills: React.FC = () => {
                         viewport={{ once: true }}
                         className={styles.skills_title}
                     >
-                        Skills
+                        {t('title_3')}
                     </motion.div>
                     <Box className={styles.skills_box}>
                         {

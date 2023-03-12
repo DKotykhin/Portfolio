@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 
 import { Container, Typography, Box, Link, Button } from '@mui/material';
@@ -11,6 +12,7 @@ import styles from './aboutMe.module.scss';
 
 
 const AboutMe: React.FC = () => {
+    const { t } = useTranslation('about');
 
     return (
         <Box id='aboutMe' className={styles.about}>
@@ -22,25 +24,22 @@ const AboutMe: React.FC = () => {
                     viewport={{ once: true }}
                     className={styles.about_title}
                 >
-                    About Me
+                    {t('title')}
                 </motion.div>
                 <Box className={styles.about_block}>
                     <img className={styles.about_img} src={myPhoto} alt='myPhoto' width='500px' />
                     <Box className={styles.about_desc}>
                         <Typography className={styles.about_name}>
-                            Dmytro Kotykhin
+                            {t('name')}
                         </Typography>
                         <Typography className={styles.about_position}>
-                            Full - Stack Developer
+                            {t('position')}
                         </Typography>
                         <Typography className={styles.about_text}>
-                            Open minded and well-organized software developer. Enthusiastically study
-                            Javascript, React, GraphQL, Mongo DB and get a great pleasure from programming and gaining new
-                            knowledge. Keen to join the development team, run as a Frontend or Fullstack
-                            Developer.
+                            {t('text')}
                         </Typography>
                         <Link href={require("cv/CV_Dmytro_Kotykhin.pdf")} download='CV_Dmytro_Kotykhin.pdf' target='_blank'>
-                            <Button className={styles.about_button}>Download CV</Button>
+                            <Button className={styles.about_button}>{t('button')}</Button>
                         </Link>
                     </Box>
                 </Box>

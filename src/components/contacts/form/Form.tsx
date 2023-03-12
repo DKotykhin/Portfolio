@@ -1,4 +1,6 @@
 import React, { useRef } from 'react';
+
+import { useTranslation } from 'react-i18next';
 import { useForm, Controller } from "react-hook-form";
 
 import emailjs from '@emailjs/browser';
@@ -26,6 +28,7 @@ const Form: React.FC = () => {
     const [snackBarOpen, setSnackBarOpen] = React.useState(false);
     const [backdropOpen, setBackdropOpen] = React.useState(false);
     const [sendError, setSendError] = React.useState(false);
+    const { t } = useTranslation('contacts');
     const form = useRef();
 
     const {
@@ -69,7 +72,7 @@ const Form: React.FC = () => {
             <SnackBar open={snackBarOpen} handleClose={snackBarhandleClose} error={sendError} />
             <SimpleBackdrop open={backdropOpen} handleClose={backdropHandleClose} />
             <Typography className={styles.title}>
-                Contact with me
+                {t('subtitle')}
             </Typography>
             <Box
                 component="form"
@@ -86,7 +89,7 @@ const Form: React.FC = () => {
                                 <Input
                                     {...field}
                                     type="text"
-                                    placeholder="your name..."
+                                    placeholder={t('placeholder_1') || "your name..."}
                                     autoComplete="name"
                                     error={errors.name ? true : false}
                                     className={styles.input}
@@ -103,7 +106,7 @@ const Form: React.FC = () => {
                                 <Input
                                     {...field}
                                     type="text"
-                                    placeholder="your email..."
+                                    placeholder={t('placeholder_2') || "your email..."}
                                     autoComplete="email"
                                     error={errors.email ? true : false}
                                     className={styles.input}
@@ -121,7 +124,7 @@ const Form: React.FC = () => {
                                     {...field}
                                     multiline
                                     maxRows={6}
-                                    placeholder="your text..."
+                                    placeholder={t('placeholder_3') || "your message..."}
                                     error={errors.message ? true : false}
                                     className={styles.textarea}
                                 />
@@ -135,7 +138,7 @@ const Form: React.FC = () => {
                     className={styles.submit}
                     type="submit"
                 >
-                    Submit
+                    {t('button')}
                 </Button>
             </Box>
         </Box>

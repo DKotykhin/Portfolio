@@ -1,0 +1,12 @@
+{
+    "title": "Contacts",
+    "subtitle": "Contact with me",
+    "placeholder_1": "your name...",
+    "placeholder_2": "your email...",
+    "placeholder_3": "your message...",
+    "button": "Submit",
+    "tel": "Phone:",
+    "address": "Address:",
+    "success": "Your message successfully sent",
+    "error": "Something goes wrong..."
+}

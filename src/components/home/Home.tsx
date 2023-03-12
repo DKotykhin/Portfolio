@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
 
@@ -10,6 +11,7 @@ import { homeVariant } from 'animation/variants';
 import styles from './home.module.scss'
 
 const Home: React.FC = () => {
+    const { t } = useTranslation('home');
 
     return (
         <Box id='home' className={styles.home}>
@@ -20,7 +22,7 @@ const Home: React.FC = () => {
                     variants={homeVariant}
                     custom={1}
                 >
-                    Hello,
+                    {t('line_1')}
                 </motion.div>
                 <motion.div
                     initial='hidden'
@@ -28,7 +30,7 @@ const Home: React.FC = () => {
                     variants={homeVariant}
                     custom={2}
                 >
-                    I am Dmytro Kotykhin
+                    {t('line_2')}
                 </motion.div>
                 <motion.div
                     initial='hidden'
@@ -36,7 +38,7 @@ const Home: React.FC = () => {
                     variants={homeVariant}
                     custom={3}
                 >
-                    Full - Stack Developer
+                    {t('line_3')}
                 </motion.div>
                 <motion.div
                     initial='hidden'
@@ -48,7 +50,7 @@ const Home: React.FC = () => {
                         <Link
                             to={'aboutMe'} spy={true} smooth={true} offset={-56} duration={500}
                         >
-                            See Who I'm
+                            {t('button')}
                         </Link>
                     </Box>
                 </motion.div>

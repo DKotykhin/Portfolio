@@ -1,5 +1,7 @@
 import * as React from 'react';
 
+import { useTranslation } from 'react-i18next';
+
 import { Snackbar, IconButton } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import MuiAlert, { AlertProps } from '@mui/material/Alert';
@@ -15,9 +17,7 @@ interface ISnackBar {
 };
 
 const SnackBar: React.FC<ISnackBar> = ({ open, handleClose, error }) => {
-
-    const severity = error ? 'error' : 'success';
-    const message = error ? 'Something goes wrong' : 'Your message successfully sent'
+    const { t } = useTranslation('contacts');
 
     const action = (
         <IconButton
@@ -38,9 +38,15 @@ const SnackBar: React.FC<ISnackBar> = ({ open, handleClose, error }) => {
             action={action}
             anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
         >
-            <Alert onClose={handleClose} severity={severity} sx={{ width: '100%' }}>
-                {message}
-            </Alert>
+            {
+                error
+                    ? <Alert onClose={handleClose} severity='error' sx={{ width: '100%' }}>
+                        {t('error')} &#128533;
+                    </Alert>
+                    : <Alert onClose={handleClose} severity='success' sx={{ width: '100%' }}>
+                        {t('success')} &#128526;
+                    </Alert>
+            }
         </Snackbar>
     );
 }
