@@ -37,21 +37,37 @@ const Contacts: React.FC = () => {
                             <LocalPhoneOutlinedIcon />
                             <Typography className={styles.contacts_text}>
                                 {t('tel')}
-                                <Link className={styles.contacts_link} href="tel:48721810244">+48 721 810 244</Link>
+                                <Link
+                                    className={styles.contacts_link}
+                                    href="tel:48721810244"
+                                >
+                                    +48 721 810 244
+                                </Link>
                             </Typography>
                         </Box>
                         <Box className={styles.contacts_box}>
                             <EmailOutlinedIcon />
                             <Typography className={styles.contacts_text}>
                                 Email:
-                                <Link className={styles.contacts_link} href="mailto:kotykhin.d@gmail.com">kotykhin.d@gmail.com</Link>
+                                <Link
+                                    className={styles.contacts_link}
+                                    href="mailto:kotykhin.d@gmail.com"
+                                >
+                                    kotykhin.d@gmail.com
+                                </Link>
                             </Typography>
                         </Box>
                         <Box className={styles.contacts_box}>
                             <LocationOnOutlinedIcon />
                             <Typography className={styles.contacts_text}>
                                 {t('address')}
-                                <Link className={styles.contacts_link} href="https://goo.gl/maps/4zJGiVenVpuipotc7" target='_blank'>Warsaw, Poland</Link>
+                                <Link
+                                    className={styles.contacts_link}
+                                    href="https://goo.gl/maps/4zJGiVenVpuipotc7"
+                                    target='_blank'
+                                >
+                                    {t('address_content')}
+                                </Link>
                             </Typography>
                         </Box>
                     </Box>

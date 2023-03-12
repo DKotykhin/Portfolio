@@ -13,6 +13,7 @@ The best way to see my projects
 - React Hook Form for feedback form
 - Yup for validation
 - EmailJS for send email from form
+- Two languages
 - Mobile friendly
 
 ## Environment Variables
