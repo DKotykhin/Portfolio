@@ -1,4 +1,4 @@
-@import 'constants/constants.scss';
+@import "constants/constants.scss";
 
 .card {
     background-color: $color_main;
@@ -6,8 +6,8 @@
     padding: 25px;
     position: relative;
     .title {
-       font-size: 1.25rem;
-       margin-bottom: 10px; 
+        font-size: 1.25rem;
+        margin-bottom: 10px;
     }
     .subtitle {
         margin-bottom: 20px;
@@ -29,33 +29,29 @@
         color: $color_orange;
         transition: 0.4s;
     }
-
 }
 
 .card:before,
 .card:after {
     position: absolute;
     content: "";
-    transition: all .4s;
+    transition: all 0.4s;
     width: 10%;
     height: 15%;
 }
 .card:before {
     border-bottom: 2px solid $color_orange;
     border-left: 2px solid $color_orange;
-    left: -0px;
-    bottom: -0px;
+    left: 0;
+    bottom: 0;
 }
 .card:after {
     border-top: 2px solid $color_orange;
     border-right: 2px solid $color_orange;
-    top: -0px;
-    right: -0px;
+    top: 0;
+    right: 0;
 }
-.card:hover:before {
-    width: 100%;
-    height: 100%;
-}
+.card:hover:before,
 .card:hover:after {
     width: 100%;
     height: 100%;

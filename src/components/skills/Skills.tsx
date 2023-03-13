@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 
 import { Box, Container, Typography } from '@mui/material';
 
+import SkillCard from './skillCard/SkillCard';
 import { allSkills, ISkills } from './skillsData';
 import { titleVariant } from 'animation/variants';
 
@@ -91,12 +92,11 @@ const Skills: React.FC = () => {
                     <Box className={styles.skills_box}>
                         {
                             allSkills.map(((item: ISkills) => (
-                                <Box key={item.id} className={styles.skills_item}>
-                                    <img src={item.image} alt={item.title} />
-                                    <Typography className={styles.skills_itemTitle}>
-                                        {item.title}
-                                    </Typography>
-                                </Box>
+                                <SkillCard
+                                    key={item.id}
+                                    image={item.image}
+                                    title={item.title}
+                                />
                             )))
                         }
                     </Box>

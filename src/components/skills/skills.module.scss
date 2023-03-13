@@ -69,54 +69,6 @@
                 @media (max-width: 1200px) {
                     max-width: 520px;
                 }
-                .skills_item {
-                    background-color: $color_dark;
-                    margin: 15px;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    padding: 10px 20px;
-                    position: relative;
-                    img {
-                        width: 100px;
-                        height: 100px;
-                    }
-                    .skills_itemTitle {
-                        font-family: Nunito;
-                        font-weight: 600;
-                        color: $color_antiqueWhite;
-                        font-size: 1.2rem;
-                        margin-top: 4px;
-                    }
-                }
-                .skills_item:before,
-                .skills_item:after {
-                    content: "";
-                    position: absolute;
-                    transition: all 0.4s;
-                    width: 10%;
-                    height: 15%;
-                }
-
-                .skills_item:before {
-                    border-bottom: 2px solid $color_orange;
-                    border-left: 2px solid $color_orange;
-                    bottom: -0px;
-                    left: -0px;
-                }
-
-                .skills_item:after {
-                    border-top: 2px solid $color_orange;
-                    border-right: 2px solid $color_orange;
-                    top: -0px;
-                    right: -0px;
-                }
-
-                .skills_item:hover:before,
-                .skills_item:hover:after {
-                    width: 100%;
-                    height: 100%;
-                }
             }
         }
     }

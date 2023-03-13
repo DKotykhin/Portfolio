@@ -1,0 +1,50 @@
+@import "constants/constants.scss";
+
+.skillCard {
+    background-color: $color_dark;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+    img {
+        width: 100px;
+        height: 100px;
+    }
+    .skillCard_title {
+        font-family: Nunito;
+        font-weight: 600;
+        color: $color_antiqueWhite;
+        font-size: 1.2rem;
+        margin-top: 4px;
+    }
+}
+.skillCard:before,
+.skillCard:after {
+    content: "";
+    position: absolute;
+    transition: all 0.4s;
+    width: 10%;
+    height: 15%;
+}
+
+.skillCard:before {
+    border-bottom: 2px solid $color_orange;
+    border-left: 2px solid $color_orange;
+    bottom: 0;
+    left: 0;
+}
+
+.skillCard:after {
+    border-top: 2px solid $color_orange;
+    border-right: 2px solid $color_orange;
+    top: 0;
+    right: 0;
+}
+
+.skillCard:hover:before,
+.skillCard:hover:after {
+    width: 100%;
+    height: 100%;
+}
