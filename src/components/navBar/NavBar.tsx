@@ -33,7 +33,7 @@ const NavBar = (props: Props) => {
     };
 
     const drawer = (
-        <Box onClick={handleDrawerToggle} className={styles.drawer}>
+        <Box onClick={handleDrawerToggle} className={styles.drawerBox}>
             <Box className={styles.drawerLogo}>
                 <img src={logo} alt='logo' width='40px' />
             </Box>
@@ -70,15 +70,13 @@ const NavBar = (props: Props) => {
                             </Link>
                         </Box>
                         <IconButton
-                            color="inherit"
-                            aria-label="open drawer"
                             edge="start"
                             onClick={handleDrawerToggle}
-                            sx={{ display: { md: 'none' }, marginLeft: 'auto' }}
+                            className={styles.burger}
                         >
                             <MenuIcon />
                         </IconButton>
-                        <Box sx={{ display: { xs: 'none', sm: 'none', md: 'flex' }, marginLeft: 'auto' }}>
+                        <Box className={styles.itemBox}>
                             {navItems.map((item) => (
                                 <Box key={item.id}>
                                     <Link
@@ -107,7 +105,7 @@ const NavBar = (props: Props) => {
                     open={mobileOpen}
                     onClose={handleDrawerToggle}
                     ModalProps={{ keepMounted: true }}
-                    sx={{ display: { sm: 'block', md: 'none' } }}
+                    className={styles.drawer}
                 >
                     {drawer}
                 </Drawer>
