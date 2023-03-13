@@ -34,7 +34,7 @@
     align-items: center;
     justify-content: space-between;
     background-color: $color_main;
-    height: 340px;
+    // height: 340px;
     .drawerLogo {
         margin: 18px 0 10px;
     }
@@ -49,6 +49,7 @@
         padding: 5px 0;
         color: #fff;
         font-size: 1.2rem;
+        font-family: Nunito;
         .drawerLink {
             cursor: pointer;
             color: #fff;
@@ -56,9 +57,10 @@
     }
     .drawerLang {
         cursor: pointer;
+        font-family: Nunito;
         text-align: center;
         width: 50px;
-        margin: 5px 0 20px;
+        margin: 15px 0 30px;
         padding: 0 8px;
         color: $color_lightGrey;
         border: 1px solid $color_lightGrey;
