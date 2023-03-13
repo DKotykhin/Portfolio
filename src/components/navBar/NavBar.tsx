@@ -39,15 +39,14 @@ const NavBar = (props: Props) => {
             </Box>
             <Divider className={styles.divider} />
             {navItems.map((item) => (
-                <Box key={item.id} className={styles.drawerItems}>
-                    <Link
-                        to={item.id} spy={true} smooth={true} offset={-56} duration={500}
-                        onClick={handleDrawerToggle}
-                        className={styles.drawerLink}
-                    >
-                        {item.title}
-                    </Link>
-                </Box>
+                <Link
+                    key={item.id}
+                    className={styles.drawerItem}
+                    to={item.id} spy={true} smooth={true} offset={-56} duration={500}
+                    onClick={handleDrawerToggle}
+                >
+                    {item.title}
+                </Link>
             ))}
             {
                 i18n.language === 'en'

@@ -56,7 +56,6 @@
         align-items: center;
         justify-content: space-between;
         background-color: $color_main;
-        // height: 340px;
         .drawerLogo {
             margin: 18px 0 10px;
         }
@@ -66,16 +65,12 @@
             margin: 0 auto;
             margin-bottom: 12px;
         }
-        .drawerItems {
+        .drawerItem {
             display: block;
-            padding: 5px 0;
+            padding: 5px 20px;
             color: #fff;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             font-family: Nunito;
-            .drawerLink {
-                cursor: pointer;
-                color: #fff;
-            }
         }
         .drawerLang {
             cursor: pointer;
