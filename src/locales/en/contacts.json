@@ -6,8 +6,8 @@
     "placeholder_3": "your message...",
     "button": "Submit",
     "tel": "Phone:",
-    "address": "Address:",
-    "address_content": "Warsaw, Poland",
+    "location": "Location:",
+    "location_content": "Warsaw, Poland",
     "success": "Your message successfully sent",
     "error": "Something goes wrong..."
 }

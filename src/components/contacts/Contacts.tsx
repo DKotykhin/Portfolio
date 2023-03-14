@@ -37,8 +37,7 @@ const Contacts: React.FC = () => {
                             <LocalPhoneOutlinedIcon />
                             <Typography className={styles.contacts_text}>
                                 {t('tel')}
-                                <Link
-                                    className={styles.contacts_link}
+                                <Link                                    
                                     href="tel:48721810244"
                                 >
                                     +48 721 810 244
@@ -49,8 +48,7 @@ const Contacts: React.FC = () => {
                             <EmailOutlinedIcon />
                             <Typography className={styles.contacts_text}>
                                 Email:
-                                <Link
-                                    className={styles.contacts_link}
+                                <Link                                    
                                     href="mailto:kotykhin.d@gmail.com"
                                 >
                                     kotykhin.d@gmail.com
@@ -60,13 +58,12 @@ const Contacts: React.FC = () => {
                         <Box className={styles.contacts_box}>
                             <LocationOnOutlinedIcon />
                             <Typography className={styles.contacts_text}>
-                                {t('address')}
+                                {t('location')}
                                 <Link
-                                    className={styles.contacts_link}
                                     href="https://goo.gl/maps/4zJGiVenVpuipotc7"
                                     target='_blank'
                                 >
-                                    {t('address_content')}
+                                    {t('location_content')}
                                 </Link>
                             </Typography>
                         </Box>
