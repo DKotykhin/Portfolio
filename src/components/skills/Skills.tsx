@@ -31,10 +31,10 @@ const Skills: React.FC = () => {
                         <Typography className={styles.study_subtitle}>
                             {t('subtitle_11')}
                         </Typography>
-                        <Typography className={styles.study_text}>
+                        <Typography>
                             {t('text_11')} (09.1991 &#8208; 06.1996)
                         </Typography>
-                        <Typography className={styles.study_text}>
+                        <Typography >
                             {t('text_12')}
                         </Typography>
                     </Box>
@@ -42,10 +42,10 @@ const Skills: React.FC = () => {
                         <Typography className={styles.study_subtitle}>
                             {t('subtitle_12')}
                         </Typography>
-                        <Typography className={styles.study_text}>
+                        <Typography>
                             Master's degree (09.2006 &#8208; 06.2008)
                         </Typography>
-                        <Typography className={styles.study_text}>
+                        <Typography>
                             Master of Business Administration(Executive MBA)
                         </Typography>
                     </Box>
@@ -53,7 +53,7 @@ const Skills: React.FC = () => {
                         <Typography className={styles.study_subtitle}>
                             The Language Gallery, London, UK
                         </Typography>
-                        <Typography className={styles.study_text}>
+                        <Typography>
                             {t('text_13')} &#8208; B2 (08.2014)
                         </Typography>
                     </Box>
@@ -62,22 +62,24 @@ const Skills: React.FC = () => {
                         whileInView='visible'
                         variants={titleVariant}
                         viewport={{ once: true }}
-                        className={styles.study_title}
+                        className={styles.hobby_title}
                     >
                         {t('title_2')}
                     </motion.div>
-                    <Typography className={styles.hobby_text}>
-                        {t('text_21')}
-                    </Typography>
-                    <Typography className={styles.hobby_text}>
-                        {t('text_22')}
-                    </Typography>
-                    <Typography className={styles.hobby_text}>
-                        {t('text_23')}
-                    </Typography>
-                    <Typography className={styles.hobby_text}>
-                        {t('text_24')}
-                    </Typography>
+                    <Box className={styles.hobby_textBox}>
+                        <Typography>
+                            {t('text_21')}
+                        </Typography>
+                        <Typography>
+                            {t('text_22')}
+                        </Typography>
+                        <Typography>
+                            {t('text_23')}
+                        </Typography>
+                        <Typography>
+                            {t('text_24')}
+                        </Typography>
+                    </Box>
                 </Box>
                 <Box className={styles.skills_block}>
                     <motion.div

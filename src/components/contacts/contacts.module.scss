@@ -4,12 +4,7 @@
     min-height: calc(100vh - 64px);    
     background-color: $color_grey;    
     .contacts_title {
-        text-align: center;
-        font-family: Nunito;
-        padding: 40px 0;
-        font-size: 2rem;
-        font-weight: 600;
-        color: $color_antiqueWhite;
+        @include title;
     }
     .contacts_block {
         display: flex;

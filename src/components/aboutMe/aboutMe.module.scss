@@ -5,12 +5,7 @@
     background-color: $color_main;
     padding-bottom: 40px;
     .about_title {
-        font-family: Nunito;
-        text-align: center;
-        padding: 40px 0;
-        font-size: 2rem;
-        font-weight: 600;
-        color: $color_antiqueWhite;
+        @include title;
     }
     .about_block {
         display: flex;

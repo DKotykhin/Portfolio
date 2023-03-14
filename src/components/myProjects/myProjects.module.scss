@@ -4,12 +4,8 @@
     min-height: calc(100vh - 64px);
     background-color: $color_dark;
     .title {
-        font-family: Nunito;
-        text-align: center;
-        padding: 40px 0;
-        font-size: 2rem;
-        font-weight: 600;
-        color: $color_antiqueWhite;
+        @include title;
+        padding-bottom: 25px;
     }
     .cardsBox {
         display: flex;

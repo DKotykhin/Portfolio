@@ -23,6 +23,7 @@ To run this project, you will need to add the following environment variables to
 `REACT_APP_EMAIL_SERVICE_ID`
 `REACT_APP_EMAIL_TEMPLATE_ID`
 `REACT_APP_EMAIL_PUBLIC_KEY`
+`REACT_APP_GOOGLE_DATA_ID`
 
 ## Deploy on Netlify
 
