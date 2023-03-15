@@ -62,10 +62,10 @@
                 @media (max-width: 1200px) {
                     width: 480px;
                 }
-                @media (max-width: 541px) {
-                    width: 300px;
+                @media (max-width: 600px) {
+                    width: 310px;
                 }
-                @media (max-width: 371px) {
+                @media (max-width: 320px) {
                     width: auto;
                 }
             }
@@ -74,7 +74,10 @@
                 justify-content: center;
                 flex-wrap: wrap;
                 @media (max-width: 1200px) {
-                    max-width: 520px;
+                    max-width: 600px;
+                }
+                @media (max-width: 600px) {
+                    max-width: 400px;
                 }
             }
         }

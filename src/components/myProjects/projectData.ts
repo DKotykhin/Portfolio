@@ -1,9 +1,9 @@
 import coffeedoor from "images/projects/coffeedoor_600x361.webp";
 import todolist from "images/projects/todolist_600x361.webp";
-import expressback from "images/projects/express_600x361.webp";
-import nestback from "images/projects/nest_600x361.webp";
-import apolloback from "images/projects/apollo_600x361.webp";
 import portfolio from "images/projects/portfolio_600x361.webp";
+import expressback from "images/projects/express_600x361.webp";
+import apolloback from "images/projects/apollo_600x361.webp";
+import nestback from "images/projects/nest_600x361.webp";
 
 import { ICard } from "./cardTypes";
 
