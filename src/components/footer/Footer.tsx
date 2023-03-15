@@ -2,7 +2,7 @@ import React from 'react';
 
 import { useTranslation } from 'react-i18next';
 
-import { Typography, Link, Container, Box } from "@mui/material";
+import { Typography, Link, Box } from "@mui/material";
 
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TelegramIcon from '@mui/icons-material/Telegram';
@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
 
     return (
         <Box className={styles.footer}>
-            <Container className={styles.footer__social}>
+            <Box className={styles.footer__social}>
                 <Link href='https://www.linkedin.com/in/dmytro-kotykhin-4683151b' target="_blank">
                     <LinkedInIcon />
                 </Link>
@@ -25,9 +25,9 @@ const Footer: React.FC = () => {
                 <Link href='https://github.com/DKotykhin' target="_blank">
                     <GitHubIcon />
                 </Link>
-            </Container>
+            </Box>
             <Typography className={styles.footer__right}>
-                &copy; 2023 {t('text')}
+                Copyright &copy; 2023 {t('text')}
             </Typography>
         </Box>
     )
