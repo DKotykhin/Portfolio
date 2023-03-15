@@ -61,9 +61,11 @@
                 padding-bottom: 25px;
                 @media (max-width: 1200px) {
                     width: 480px;
-                    text-align: right;
                 }
-                @media (max-width: 600px) {
+                @media (max-width: 541px) {
+                    width: 300px;
+                }
+                @media (max-width: 371px) {
                     width: auto;
                 }
             }

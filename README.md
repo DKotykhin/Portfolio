@@ -14,6 +14,7 @@ The best way to see my projects
 - Yup for validation
 - EmailJS for send email from form
 - Two languages
+- Google Analitycs
 - Mobile friendly
 
 ## Environment Variables
