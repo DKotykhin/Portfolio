@@ -27,9 +27,8 @@ const ProjectModal: React.FC<IModal> = ({ open, handleClose, props }) => {
                 <Typography className={styles.title}>
                     {title}
                 </Typography>
-                {/* <img src={image[0]} alt={image[0]} width='600px' /> */}
                 <ImageSwiper imageArray={imageArray} />
-                <Typography className={styles.description} sx={imageArray.length < 2 ? { marginTop: -1 } : null}>
+                <Typography className={styles.description} sx={imageArray.length < 2 ? { marginTop: '-12px' } : null}>
                     {i18n.language === 'en' ? descriptionEn : descriptionUkr}
                 </Typography>
                 <Box className={styles.tagBox}>

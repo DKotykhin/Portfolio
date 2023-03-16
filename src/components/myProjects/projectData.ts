@@ -78,6 +78,9 @@ export const projectData: Array<ICard> = [
             "EmailJS",
             "SASS",
             "i18next",
+            "Swiper",
+            "Yup",
+            "React GA4"
         ],
     },
     {
