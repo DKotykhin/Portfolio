@@ -5,7 +5,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 660px;
+    width: 660px;
     border: 1px solid $color_lightGrey;
     padding: 30px;
     background-color: $color_grey;
@@ -36,13 +36,11 @@
         max-width: 85%;
     }
     img {
-        @media (max-width: 768px) {
-            max-width: 100%;
-        }
+        width: 100%;
     }
     .description {
         color: $color_lightGrey;
-        margin: 10px 0 20px;
+        margin-bottom: 20px;
         font-size: 0.9rem;
     }
     .tagBox {

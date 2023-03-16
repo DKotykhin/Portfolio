@@ -1,9 +1,8 @@
-import coffeedoor from "images/projects/coffeedoor_600x361.webp";
-import todolist from "images/projects/todolist_600x361.webp";
-import portfolio from "images/projects/portfolio_600x361.webp";
 import expressback from "images/projects/express_600x361.webp";
 import apolloback from "images/projects/apollo_600x361.webp";
 import nestback from "images/projects/nest_600x361.webp";
+
+import { coffeedoorArray, todolistArray, portfolioArray } from "./photoArray";
 
 import { ICard } from "./cardTypes";
 
@@ -13,7 +12,7 @@ export const projectData: Array<ICard> = [
         title: "CoffeeDoor",
         subtitleEn: "Coffee and Tea Online Shop",
         subtitleUkr: "Онлайн магазин кави та чаю",
-        image: coffeedoor,
+        imageArray: coffeedoorArray,
         openLink: "https://coffeedoor.space",
         githubLink: "https://github.com/DKotykhin/Coffeedoor-next-Hygraph",
         descriptionEn:
@@ -38,7 +37,7 @@ export const projectData: Array<ICard> = [
         title: "Todolist",
         subtitleEn: "Easy Todo App",
         subtitleUkr: "Застосунок для ваших справ",
-        image: todolist,
+        imageArray: todolistArray,
         openLink: "https://mytodolist.fun",
         githubLink: "https://github.com/DKotykhin/TodoList-Frontend-RTK-Query",
         descriptionEn:
@@ -62,7 +61,7 @@ export const projectData: Array<ICard> = [
         title: "Portfolio",
         subtitleEn: "My Portfolio Project",
         subtitleUkr: "Проект мого портфоліо",
-        image: portfolio,
+        imageArray: portfolioArray,
         openLink: "https://dmytro-kotykhin.netlify.app",
         githubLink: "https://github.com/DKotykhin/Portfolio",
         descriptionEn:
@@ -86,7 +85,7 @@ export const projectData: Array<ICard> = [
         title: "Express JS Backend for TodoList",
         subtitleEn: "Connect Frontend App with MongoDB",
         subtitleUkr: "Поєднує клієнтську частину з базою MongoDB",
-        image: expressback,
+        imageArray: [expressback],
         openLink: "https://todolist-new17.herokuapp.com/",
         githubLink: "https://github.com/DKotykhin/TodoList-Backend-Express",
         descriptionEn:
@@ -108,7 +107,7 @@ export const projectData: Array<ICard> = [
         title: "Apollo JS Backend for TodoList",
         subtitleEn: "Connect Frontend App with MongoDB",
         subtitleUkr: "Поєднує клієнтську частину з базою MongoDB",
-        image: apolloback,
+        imageArray: [apolloback],
         openLink: "https://todolist-new19.herokuapp.com/graphql",
         githubLink: "https://github.com/DKotykhin/TodoList-Backend-Apollo",
         descriptionEn:
@@ -130,7 +129,7 @@ export const projectData: Array<ICard> = [
         title: "Nest JS Backend for TodoList",
         subtitleEn: "Connect Frontend App with MongoDB",
         subtitleUkr: "Поєднує клієнтську частину з базою MongoDB",
-        image: nestback,
+        imageArray: [nestback],
         openLink: "https://todolist-new20.herokuapp.com/",
         githubLink: "https://github.com/DKotykhin/TodoList-Backend-NestJS",
         descriptionEn:

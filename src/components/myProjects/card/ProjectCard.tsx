@@ -9,7 +9,7 @@ import { ICard } from '../cardTypes';
 import styles from './projectCard.module.scss';
 
 const ProjectCard: React.FC<ICard> = (props) => {
-    const { title, subtitleEn, subtitleUkr, image } = props;
+    const { title, subtitleEn, subtitleUkr, imageArray } = props;
 
     const [open, setOpen] = React.useState(false);
     const { t, i18n } = useTranslation('projects');
@@ -26,7 +26,7 @@ const ProjectCard: React.FC<ICard> = (props) => {
                 <Typography className={styles.subtitle}>
                     {i18n.language === 'en' ? subtitleEn : subtitleUkr}
                 </Typography>
-                <img src={image} alt={image} className={styles.image} width='350px' />
+                <img src={imageArray[0]} alt={imageArray[0]} className={styles.image} width='350px' />
                 <Box className={styles.button}>
                     <Button onClick={handleClick}>{t('button')}</Button>
                 </Box>
