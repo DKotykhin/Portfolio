@@ -13,7 +13,14 @@ import Footer from './components/footer/Footer';
 import styles from './app.module.scss';
 
 const TRACKING_ID: string = process.env.REACT_APP_GOOGLE_DATA_ID || "";
-ReactGA.initialize(TRACKING_ID);
+ReactGA.initialize([
+    {
+        trackingId: TRACKING_ID,
+        gaOptions: {
+            testMode: false,
+        },
+    }
+]);
 
 
 const App: React.FC = () => {
