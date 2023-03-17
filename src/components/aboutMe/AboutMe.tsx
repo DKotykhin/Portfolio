@@ -1,6 +1,5 @@
 import React from 'react';
 
-import ReactGA from "react-ga4";
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 
@@ -14,14 +13,6 @@ import styles from './aboutMe.module.scss';
 
 const AboutMe: React.FC = () => {
     const { t } = useTranslation('about');
-
-    const handleClick = () => {
-        ReactGA.event({
-            category: "button",
-            action: "click CV",
-            label: "CV label",
-        });
-    }
 
     return (
         <Box id='aboutMe' className={styles.about}>
@@ -48,7 +39,7 @@ const AboutMe: React.FC = () => {
                             {t('text')}
                         </Typography>
                         <Link href={require("cv/CV_Dmytro_Kotykhin.pdf")} download='CV_Dmytro_Kotykhin.pdf' target='_blank'>
-                            <Button className={styles.about_button} onClick={handleClick}>{t('button')}</Button>
+                            <Button className={styles.about_button}>{t('button')}</Button>
                         </Link>
                     </Box>
                 </Box>

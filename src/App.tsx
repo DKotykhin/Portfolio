@@ -15,7 +15,6 @@ import styles from './app.module.scss';
 const TRACKING_ID: string = process.env.REACT_APP_GOOGLE_DATA_ID || "";
 ReactGA.initialize(TRACKING_ID);
 
-
 const App: React.FC = () => {
 
     return (
