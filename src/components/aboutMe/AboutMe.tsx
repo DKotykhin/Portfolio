@@ -27,15 +27,15 @@ const AboutMe: React.FC = () => {
                     {t('title')}
                 </motion.div>
                 <Box className={styles.about_block}>
-                    <img className={styles.about_img} src={myPhoto} alt='myPhoto' width='500px' />
+                    <img className={styles.about_img} src={myPhoto} alt='Dmytro Kotykhin' width='500px' />
                     <Box className={styles.about_desc}>
-                        <Typography className={styles.about_name}>
+                        <Typography component='h1' className={styles.about_name}>
                             {t('name')}
                         </Typography>
-                        <Typography className={styles.about_position}>
+                        <Typography component='h2' className={styles.about_position}>
                             {t('position')}
                         </Typography>
-                        <Typography className={styles.about_text}>
+                        <Typography component='h3' className={styles.about_text}>
                             {t('text')}
                         </Typography>
                         <Link href={require("cv/CV_Dmytro_Kotykhin.pdf")} download='CV_Dmytro_Kotykhin.pdf' target='_blank'>

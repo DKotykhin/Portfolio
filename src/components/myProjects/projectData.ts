@@ -67,7 +67,7 @@ export const projectData: Array<ICard> = [
         descriptionEn:
             "This 2-languages SPA helps introduce my skills in professional way. It's a simply way to see my own projects",
         descriptionUkr:
-            "Застосунок допомагає предстваити мій професійний досвід. Підтримує дві мови. Найпростіший спосіб подивитися мої проекти",
+            "Застосунок допомагає представити мій професійний досвід. Підтримує дві мови. Найпростіший спосіб подивитися мої проекти",
         tags: [
             "React",
             "Typescript",

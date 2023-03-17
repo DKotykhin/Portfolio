@@ -11,7 +11,7 @@ The best way to see my projects
 - MUI, SCSS
 - React scroll to smooth page moving
 - Framer Motion for animation
-- Swiper to learn screenshot of the projects
+- Swiper to learn screenshots of the projects
 - React Hook Form for feedback form
 - Yup for validation
 - EmailJS for send email from form

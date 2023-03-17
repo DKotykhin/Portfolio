@@ -35,7 +35,7 @@ const NavBar = (props: Props) => {
     const drawer = (
         <Box onClick={handleDrawerToggle} className={styles.drawerBox}>
             <Box className={styles.drawerLogo}>
-                <img src={logo} alt='logo' width='40px' />
+                <img src={logo} alt='Dmytro Kotykhin logo' width='40px' />
             </Box>
             <Divider className={styles.divider} />
             {navItems.map((item) => (
@@ -65,7 +65,7 @@ const NavBar = (props: Props) => {
                     <Toolbar>
                         <Box className={styles.logo}>
                             <Link to='home' spy={true} smooth={true} duration={800}>
-                                <img src={logo} alt='logo' width='40px' />
+                                <img src={logo} alt='Dmytro Kotykhin logo' width='40px' />
                             </Link>
                         </Box>
                         <IconButton
