@@ -21,85 +21,46 @@ export interface ISkills {
     title: string;
 }
 
-export const allSkills:Array<ISkills> = [
-    {
-        id: 1,
-        image: htmlIcon,
-        title: "HTML",
-    },
-    {
-        id: 2,
-        image: jsIcon,
-        title: "Javascript",
-    },
-    {
-        id: 3,
-        image: cssIcon,
-        title: "CSS",
-    },
-    {
-        id: 4,
-        image: reactIcon,
-        title: "React",
-    },
-    {
-        id: 5,
-        image: reduxIcon,
-        title: "Redux",
-    },
-    {
-        id: 6,
-        image: tsIcon,
-        title: "Typescript",
-    },
-    {
-        id: 7,
-        image: nextjsIcon,
-        title: "Next JS",
-    },
-    {
-        id: 8,
-        image: graphqlIcon,
-        title: "GraphQL",
-    },
-    {
-        id: 9,
-        image: nestjsIcon,
-        title: "Nest JS",
-    },
-    {
-        id: 10,
-        image: apolloIcon,
-        title: "Apollo",
-    },
-    {
-        id: 11,
-        image: nodejsIcon,
-        title: "Node JS",
-    },
-    {
-        id: 12,
-        image: gitIcon,
-        title: "GitHub",
-    },
-    {
-        id: 13,
-        image: sassIcon,
-        title: "SaSS",
-    },
-    {
-        id: 14,
-        image: materialUiIcon,
-        title: "Material UI",
-    },
-    {
-        id: 15,
-        image: hygraphIcon,
-        title: "Hygraph",
-    },
-    {
-        id: 16,
-        image: mongodbIcon,
-        title: "Mongo DB",
-    },
+class Skills implements ISkills {
+    constructor(
+        public id: number,
+        public image: string,
+        public title: string
+    ) {}
+}
+
+const HTML = new Skills(1, htmlIcon, "HTML");
+const Javascript = new Skills(2, jsIcon, "Javascript");
+const CSS = new Skills(3, cssIcon, "CSS");
+const React = new Skills(4, reactIcon, "React");
+const Redux = new Skills(5, reduxIcon, "Redux");
+const Typescript = new Skills(6, tsIcon, "Typescript");
+const NextJS = new Skills(7, nextjsIcon, "Next JS");
+const GraphQL = new Skills(8, graphqlIcon, "GraphQL");
+const NestJS = new Skills(9, nestjsIcon, "Nest JS");
+const Apollo = new Skills(10, apolloIcon, "Apollo");
+const NodeJS = new Skills(11, nodejsIcon, "Node JS");
+const GitHub = new Skills(12, gitIcon, "GitHub");
+const SaSS = new Skills(13, sassIcon, "SaSS");
+const MaterialUI = new Skills(14, materialUiIcon, "Material UI");
+const Hygraph = new Skills(15, hygraphIcon, "Hygraph");
+const MongoDB = new Skills(16, mongodbIcon, "Mongo DB");
+
+export const allSkills: Array<ISkills> = [
+    HTML,
+    Javascript,
+    CSS,
+    React,
+    Redux,
+    Typescript,
+    NextJS,
+    GraphQL,
+    NestJS,
+    Apollo,
+    NodeJS,
+    GitHub,
+    SaSS,
+    MaterialUI,
+    Hygraph,
+    MongoDB,
 ];
