@@ -10,19 +10,25 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 import styles from './footer.module.scss';
 
+enum link {
+    linkedin = 'https://www.linkedin.com/in/dmytro-kotykhin-4683151b',
+    telegram = 'https://t.me/Dmytro_Kotykhin',
+    gitHub = 'https://github.com/DKotykhin',
+}
+
 const Footer: React.FC = () => {
     const { t } = useTranslation('footer');
 
     return (
         <Box className={styles.footer}>
             <Box className={styles.footer__social}>
-                <Link href='https://www.linkedin.com/in/dmytro-kotykhin-4683151b' target="_blank">
+                <Link href={link.linkedin} target="_blank">
                     <LinkedInIcon />
                 </Link>
-                <Link href='https://t.me/Dmytro_Kotykhin' target="_blank">
+                <Link href={link.telegram} target="_blank">
                     <TelegramIcon />
                 </Link>
-                <Link href='https://github.com/DKotykhin' target="_blank">
+                <Link href={link.gitHub} target="_blank">
                     <GitHubIcon />
                 </Link>
             </Box>
