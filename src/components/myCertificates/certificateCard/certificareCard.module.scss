@@ -1,0 +1,52 @@
+@import "constants/constants.scss";
+
+.certificateCard {
+    background-color: $color_grey;
+    color: $color_antiqueWhite;
+    padding: 25px;
+    position: relative;
+    .title {
+        font-size: 1.25rem;
+        margin-bottom: 10px;
+    }
+    img {
+        max-width: 100%;
+    }
+    .icon {
+        position: absolute;
+        right: 25px;
+        bottom: 25px;
+        color: $color_lightGrey;
+        z-index: 2;
+        cursor: pointer;
+        svg {
+            font-size: 2rem;
+        }
+    }
+}
+
+.certificateCard:before,
+.certificateCard:after {
+    position: absolute;
+    content: "";
+    transition: all 0.4s;
+    width: 10%;
+    height: 15%;
+}
+.certificateCard:before {
+    border-bottom: 2px solid $color_orange;
+    border-left: 2px solid $color_orange;
+    left: 0;
+    bottom: 0;
+}
+.certificateCard:after {
+    border-top: 2px solid $color_orange;
+    border-right: 2px solid $color_orange;
+    top: 0;
+    right: 0;
+}
+.certificateCard:hover:before,
+.certificateCard:hover:after {
+    width: 100%;
+    height: 100%;
+}

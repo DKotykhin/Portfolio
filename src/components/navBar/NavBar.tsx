@@ -24,8 +24,9 @@ const NavBar = (props: Props) => {
         { title: t("item_1"), id: "home" },
         { title: t("item_2"), id: "aboutMe" },
         { title: t("item_3"), id: "skills" },
-        { title: t("item_4"), id: "projects" },
-        { title: t("item_5"), id: "contacts" },
+        { title: t("item_4"), id: "certificates" },
+        { title: t("item_5"), id: "projects" },
+        { title: t("item_6"), id: "contacts" },
     ];
 
     const handleDrawerToggle = () => {

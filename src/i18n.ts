@@ -8,6 +8,7 @@ import skillsEn from "locales/en/skills.json";
 import projectsEn from "locales/en/projects.json";
 import contactsEn from "locales/en/contacts.json";
 import footerEn from "locales/en/footer.json";
+import certEn from "locales/en/certificates.json";
 
 import navBarUkr from "locales/ukr/navBar.json";
 import homeUkr from "locales/ukr/home.json";
@@ -16,6 +17,7 @@ import skillsUkr from "locales/ukr/skills.json";
 import projectsUkr from "locales/ukr/projects.json";
 import contactsUkr from "locales/ukr/contacts.json";
 import footerUkr from "locales/ukr/footer.json";
+import certUkr from "locales/ukr/certificates.json";
 
 i18n.use(initReactI18next).init({
     resources: {
@@ -27,6 +29,7 @@ i18n.use(initReactI18next).init({
             projects: projectsEn,
             contacts: contactsEn,
             footer: footerEn,
+            certificates: certEn,
         },
         ukr: {
             navBar: navBarUkr,
@@ -36,6 +39,7 @@ i18n.use(initReactI18next).init({
             projects: projectsUkr,
             contacts: contactsUkr,
             footer: footerUkr,
+            certificates: certUkr,
         },
     },
     lng: "en",

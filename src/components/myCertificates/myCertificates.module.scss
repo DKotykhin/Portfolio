@@ -1,0 +1,19 @@
+@import "constants/constants.scss";
+
+.certificates {
+    min-height: calc(100vh - 64px);
+    background-color: $color_main;
+    .title {
+        @include title;
+        padding-bottom: 25px;
+    }
+    .certificatesBox {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 15px;
+        .certificateCards {
+            margin: 15px;
+        }
+    }
+}

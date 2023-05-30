@@ -9,6 +9,7 @@ import Skills from './components/skills/Skills';
 import MyProjects from './components/myProjects/MyProjects';
 import Contacts from './components/contacts/Contacts';
 import Footer from './components/footer/Footer';
+import MyCertificates from 'components/myCertificates/MyCertificates';
 
 import styles from './app.module.scss';
 
@@ -26,6 +27,7 @@ const App: React.FC = () => {
                 <Home />
                 <AboutMe />
                 <Skills />
+                <MyCertificates />
                 <MyProjects />
                 <Contacts />
             </main>
