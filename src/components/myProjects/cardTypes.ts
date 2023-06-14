@@ -1,13 +1,17 @@
 export interface ICard {
     id: number;
     title: string;
-    subtitleEn: string;
-    subtitleUkr: string;
+    subtitle: {
+        en: string;
+        ua: string;
+    };
+    description: {
+        en: string;
+        ua: string;
+    };
     imageArray: Array<string>;
     openLink: string;
     githubLink: string;
-    descriptionEn: string;
-    descriptionUkr: string;
     tags: Array<string>;
 }
 

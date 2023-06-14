@@ -10,14 +10,14 @@ import contactsEn from "locales/en/contacts.json";
 import footerEn from "locales/en/footer.json";
 import certEn from "locales/en/certificates.json";
 
-import navBarUkr from "locales/ukr/navBar.json";
-import homeUkr from "locales/ukr/home.json";
-import aboutUkr from "locales/ukr/about.json";
-import skillsUkr from "locales/ukr/skills.json";
-import projectsUkr from "locales/ukr/projects.json";
-import contactsUkr from "locales/ukr/contacts.json";
-import footerUkr from "locales/ukr/footer.json";
-import certUkr from "locales/ukr/certificates.json";
+import navBarUa from "locales/ua/navBar.json";
+import homeUa from "locales/ua/home.json";
+import aboutUa from "locales/ua/about.json";
+import skillsUa from "locales/ua/skills.json";
+import projectsUa from "locales/ua/projects.json";
+import contactsUa from "locales/ua/contacts.json";
+import footerUa from "locales/ua/footer.json";
+import certUa from "locales/ua/certificates.json";
 
 i18n.use(initReactI18next).init({
     resources: {
@@ -31,15 +31,15 @@ i18n.use(initReactI18next).init({
             footer: footerEn,
             certificates: certEn,
         },
-        ukr: {
-            navBar: navBarUkr,
-            home: homeUkr,
-            about: aboutUkr,
-            skills: skillsUkr,
-            projects: projectsUkr,
-            contacts: contactsUkr,
-            footer: footerUkr,
-            certificates: certUkr,
+        ua: {
+            navBar: navBarUa,
+            home: homeUa,
+            about: aboutUa,
+            skills: skillsUa,
+            projects: projectsUa,
+            contacts: contactsUa,
+            footer: footerUa,
+            certificates: certUa,
         },
     },
     lng: "en",

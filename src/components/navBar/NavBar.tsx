@@ -51,7 +51,7 @@ const NavBar = (props: Props) => {
             ))}
             {
                 i18n.language === 'en'
-                    ? <Box onClick={() => i18n.changeLanguage('ukr')} className={styles.drawerLang}>Ukr</Box>
+                    ? <Box onClick={() => i18n.changeLanguage('ua')} className={styles.drawerLang}>Ua</Box>
                     : <Box onClick={() => i18n.changeLanguage('en')} className={styles.drawerLang}>En</Box>
             }
         </Box>
@@ -90,7 +90,7 @@ const NavBar = (props: Props) => {
                             ))}
                             {
                                 i18n.language === 'en'
-                                    ? <Box onClick={() => i18n.changeLanguage('ukr')} className={styles.lang}>Ukr</Box>
+                                    ? <Box onClick={() => i18n.changeLanguage('ua')} className={styles.lang}>Ua</Box>
                                     : <Box onClick={() => i18n.changeLanguage('en')} className={styles.lang}>En</Box>
                             }
                         </Box>

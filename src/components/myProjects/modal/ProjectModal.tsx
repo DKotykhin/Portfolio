@@ -13,7 +13,7 @@ import { IModal } from '../cardTypes';
 import styles from './projectModal.module.scss';
 
 const ProjectModal: React.FC<IModal> = ({ open, handleClose, props }) => {
-    const { title, imageArray, descriptionEn, descriptionUkr, openLink, githubLink, tags } = props;
+    const { title, imageArray, description, openLink, githubLink, tags } = props;
 
     const { t, i18n } = useTranslation('projects');
 
@@ -29,7 +29,7 @@ const ProjectModal: React.FC<IModal> = ({ open, handleClose, props }) => {
                 </Typography>
                 <ImageSwiper imageArray={imageArray} />
                 <Typography className={styles.description} sx={imageArray.length < 2 ? { marginTop: '-12px' } : null}>
-                    {i18n.language === 'en' ? descriptionEn : descriptionUkr}
+                    {i18n.language === 'en' ? description.en : description.ua}
                 </Typography>
                 <Box className={styles.tagBox}>
                     {
