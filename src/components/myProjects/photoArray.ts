@@ -1,4 +1,4 @@
-import coffeedoor_1 from "images/projects/coffeedoor/Coffeedoor_1_600x361.webp";
+import coffeedoor_1 from "images/projects/coffeedoor/Coffeedoor_01_600x361.webp";
 import coffeedoor_2 from "images/projects/coffeedoor/Coffeedoor_2_600x361.webp";
 import coffeedoor_3 from "images/projects/coffeedoor/Coffeedoor_3_600x361.webp";
 import coffeedoor_4 from "images/projects/coffeedoor/Coffeedoor_4_600x361.webp";
@@ -15,7 +15,7 @@ import coffeedoor_14 from "images/projects/coffeedoor/Coffeedoor_14_600x361.webp
 import coffeedoor_15 from "images/projects/coffeedoor/Coffeedoor_15_600x361.webp";
 import coffeedoor_16 from "images/projects/coffeedoor/Coffeedoor_16_600x361.webp";
 
-import coffeedoor_light_1 from "images/projects/coffeedoor_light/Coffeedoor_1_600x361.webp";
+import coffeedoor_light_1 from "images/projects/coffeedoor_light/Coffeedoor_01_600x361.webp";
 import coffeedoor_light_2 from "images/projects/coffeedoor_light/Coffeedoor_2_600x361.webp";
 import coffeedoor_light_3 from "images/projects/coffeedoor_light/Coffeedoor_3_600x361.webp";
 import coffeedoor_light_4 from "images/projects/coffeedoor_light/Coffeedoor_4_600x361.webp";
