@@ -2,7 +2,12 @@ import apolloback from "images/projects/apollo_600x361.webp";
 import nestback from "images/projects/nest_600x361.webp";
 import coffeedoorExpress from "images/projects/coffeedoor_express_600x361.webp";
 
-import { coffeedoorArray, todolistArray, portfolioArray, coffeedoorLightArray } from "./photoArray";
+import {
+    coffeedoorArray,
+    todolistArray,
+    portfolioArray,
+    coffeedoorLightArray,
+} from "./photoArray";
 
 import { ICard } from "./cardTypes";
 
@@ -48,8 +53,8 @@ export const projectData: Array<ICard> = [
         openLink: "https://coffeedoor-backend-express.herokuapp.com",
         githubLink: "https://github.com/DKotykhin/Coffeedoor-backend-express",
         description: {
-            en: "The backend app helps to connect frontend with MongoDB database. Provides full CRUD operations for 4 models: store items, menu items, orders and users. Field validation, file upload and error handler",
-            ua: "Цей бекенд застосунок допомагає поєднати клієнтську частину з базою даних MongoDB. Підтримує повний перелік CRUD операцій для 4-х моделей: елементів магазину та меню, замовленнь та користувачів. Валідація даних, завантаження файлів та обробка помилок",
+            en: "The backend app helps to connect frontend with MongoDB database. Provides full CRUD operations for 4 models: store items, menu items, orders and users. Field validation, file uploader, email sender and error handler",
+            ua: "Цей бекенд застосунок допомагає поєднати клієнтську частину з базою даних MongoDB. Підтримує повний перелік CRUD операцій для 4-х моделей: елементів магазину та меню, замовленнь та користувачів. Валідація даних, завантаження файлів, розсилка email та обробка помилок",
         },
         tags: [
             "Node JS",
@@ -57,6 +62,7 @@ export const projectData: Array<ICard> = [
             "Mongoose",
             "Multer",
             "Axios",
+            "Nodemailer",
             "JWT",
             "Bcrypt",
         ],
@@ -105,7 +111,7 @@ export const projectData: Array<ICard> = [
     },
     {
         id: 5,
-        title: "Apollo JS Backend for TodoList",
+        title: "Apollo GraphQL Backend for TodoList",
         subtitle: {
             en: "Connect Frontend App with MongoDB",
             ua: "Поєднує клієнтську частину з базою MongoDB",
@@ -114,19 +120,20 @@ export const projectData: Array<ICard> = [
         openLink: "https://todolist-new19.herokuapp.com/graphql",
         githubLink: "https://github.com/DKotykhin/TodoList-Backend-Apollo",
         description: {
-            en: "The backend app helps to connect frontend with MongoDB database. Provides full CRUD operations for users and tasks. Helps organize pagination, sort and search task by paticular parameters. Build with Node JS and Apollo Server v4.",
-            ua: "Цей бекенд застосунок допомагає поєднати клієнтську частину з базою даних MongoDB. Підтримує повний перелік CRUD операцій для користувачів та їх справ. Допомагає організувати пагінацію, сортування та пошук справ за певними параметрами. Зроблений на Node JS з використанням Apollo Server v4.",
+            en: "The backend app helps to connect frontend with MongoDB database using GraphQL query language. Provides full CRUD operations for users and tasks. Helps organize pagination, sort and search task by paticular parameters. Build with Node JS and Apollo Server v4.",
+            ua: "Цей бекенд застосунок допомагає поєднати клієнтську частину з базою даних MongoDB за допомогою мови запитів GraphQL. Підтримує повний перелік CRUD операцій для користувачів та їх справ. Допомагає організувати пагінацію, сортування та пошук справ за певними параметрами. Зроблений на Node JS з використанням Apollo Server v4.",
         },
         tags: [
             "Node JS",
-            "Express JS",
+            "Apollo",
+            "GraphQL",
             "Mongoose",
             "Multer",
             "Yup",
             "JWT",
             "Bcrypt",
         ],
-    },    
+    },
     {
         id: 6,
         title: "CoffeeDoor - light version",
@@ -183,5 +190,5 @@ export const projectData: Array<ICard> = [
             "Yup",
             "React GA4",
         ],
-    },    
+    },
 ];
