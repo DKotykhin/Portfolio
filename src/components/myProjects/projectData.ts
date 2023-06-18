@@ -78,8 +78,8 @@ export const projectData: Array<ICard> = [
         openLink: "https://mytodolist.fun",
         githubLink: "https://github.com/DKotykhin/TodoList-Frontend-RTK-Query",
         description: {
-            en: "Easy TodoList with full CRUD operations for users and their tasks. Mongo DB for a database. User login/logout, delete and registration. Validation all fields. Sort, search for task. Full description in gitHub.",
-            ua: "Простий застосунок для керування справами. Підтримує повний цикл CRUD операцій для користувачів та їх справ. База даних на Mongo DB. Вхід, вихід, реєстрація та видалення користувачів. Валідація всіх форм. Сортування, пошук для справ. Повний опис на gitHub.",
+            en: "Easy TodoList with full CRUD operations for users and their tasks. Mongo DB for a database. User login/logout, delete and registration. Validation all fields, restore password via email. Sort, search for task. Full description in gitHub.",
+            ua: "Простий застосунок для керування справами. Підтримує повний цикл CRUD операцій для користувачів та їх справ. База даних на Mongo DB. Вхід, вихід, реєстрація та видалення користувачів. Валідація всіх форм, відновлення паролю через пошту. Сортування, пошук для справ. Повний опис на gitHub.",
         },
         tags: [
             "React",
@@ -104,10 +104,10 @@ export const projectData: Array<ICard> = [
         openLink: "https://todolist-new20.herokuapp.com",
         githubLink: "https://github.com/DKotykhin/TodoList-Backend-NestJS",
         description: {
-            en: "The backend app helps to connect frontend with MongoDB database. Provides full CRUD operations for users and tasks. Helps organize pagination, sort and search task by paticular parameters. Build with Nest JS.",
-            ua: "Цей бекенд застосунок допомагає поєднати клієнтську частину з базою даних MongoDB. Підтримує повний перелік CRUD операцій для користувачів та їх справ. Допомагає організувати пагінацію, сортування та пошук справ за певними параметрами. Зроблений на Nest JS.",
+            en: "The backend app helps to connect frontend with MongoDB database. Provides full CRUD operations for users and tasks. Helps organize pagination, sort and search task by paticular parameters. Restore password via email. Build with Nest JS.",
+            ua: "Цей бекенд застосунок допомагає поєднати клієнтську частину з базою даних MongoDB. Підтримує повний перелік CRUD операцій для користувачів та їх справ. Допомагає організувати пагінацію, сортування та пошук справ за певними параметрами. Відновлення паролю через пошту. Зроблений на Nest JS.",
         },
-        tags: ["Node JS", "Nest JS", "Mongoose", "JWT", "Bcrypt"],
+        tags: ["Node JS", "Nest JS", "Mongoose", "Nodemailer", "Swagger", "JWT", "Bcrypt"],
     },
     {
         id: 5,
