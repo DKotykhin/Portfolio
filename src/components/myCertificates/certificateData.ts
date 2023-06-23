@@ -1,7 +1,8 @@
 import ReactCert from "images/certificates/UC-React_800.webp";
 import TypescriptCert from "images/certificates/UC-Typescript_800.webp";
 import NodeJSCert from "images/certificates/UC-NodeJS_800.webp";
-import NodeJSExpressCert from "images/certificates/UC-NodeJS-Express.jpg";
+import NodeJSExpressCert from "images/certificates/UC-NodeJS-Express_800.webp";
+import NestJSCert from "images/certificates/UC-NestJS_800.webp";
 import EnglishCert from "images/certificates/English-certificate.webp";
 
 interface ICertificate {
@@ -26,7 +27,8 @@ const Cert_4 = new Certificate(
     "Node JS (Mongo, GraphQL, MySQL)",
     NodeJSExpressCert
 );
-const Cert_5 = new Certificate(5, "Advanced Business English", EnglishCert);
+const Cert_5 = new Certificate(5, "Nest JS Backend", NestJSCert);
+const Cert_6 = new Certificate(6, "Advanced Business English", EnglishCert);
 
 export const certificateData: Array<ICertificate> = [
     Cert_1,
@@ -34,4 +36,5 @@ export const certificateData: Array<ICertificate> = [
     Cert_3,
     Cert_4,
     Cert_5,
+    Cert_6,
 ];
