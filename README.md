@@ -7,15 +7,15 @@ The best way to see my projects
 
 ## Features
 
-- React, Typescript
-- MUI, SCSS
+- React, Typescript - core
+- Material UI, SCSS - styling
 - React scroll to smooth page moving
 - Framer Motion for animation
-- Swiper to learn screenshots of the projects
+- Swiper to show screenshots of the projects
 - React Hook Form for feedback form
-- Yup for validation
-- EmailJS for send email from form
-- Two languages with i18next helps
+- Yup for form validation
+- EmailJS for email notification
+- Two languages with i18next
 - Google Analitycs
 - Mobile friendly
 
