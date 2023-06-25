@@ -104,10 +104,19 @@ export const projectData: Array<ICard> = [
         openLink: "https://todolist-new20.herokuapp.com",
         githubLink: "https://github.com/DKotykhin/TodoList-Backend-NestJS",
         description: {
-            en: "The backend app helps to connect frontend with MongoDB database. Provides full CRUD operations for users and tasks. Helps organize pagination, sort and search task by paticular parameters. Restore password via email. Build with Nest JS.",
-            ua: "Цей бекенд застосунок допомагає поєднати клієнтську частину з базою даних MongoDB. Підтримує повний перелік CRUD операцій для користувачів та їх справ. Допомагає організувати пагінацію, сортування та пошук справ за певними параметрами. Відновлення паролю через пошту. Зроблений на Nest JS.",
+            en: "The backend app helps to connect frontend with MongoDB database. Provides full CRUD operations for users and tasks. Helps organize pagination, sort and search task by paticular parameters. Restore password via email, resize upload avatar image. Build with Nest JS.",
+            ua: "Цей бекенд застосунок допомагає поєднати клієнтську частину з базою даних MongoDB. Підтримує повний перелік CRUD операцій для користувачів та їх справ. Допомагає організувати пагінацію, сортування та пошук справ за певними параметрами. Відновлення паролю через пошту, трансформація зображень. Зроблений на Nest JS.",
         },
-        tags: ["Node JS", "Nest JS", "Mongoose", "Nodemailer", "Swagger", "JWT", "Bcrypt"],
+        tags: [
+            "Node JS",
+            "Nest JS",
+            "Mongoose",
+            "Nodemailer",
+            "Sharp",
+            "Swagger",
+            "JWT",
+            "Bcrypt",
+        ],
     },
     {
         id: 5,
@@ -120,8 +129,8 @@ export const projectData: Array<ICard> = [
         openLink: "https://todolist-new19.herokuapp.com/graphql",
         githubLink: "https://github.com/DKotykhin/TodoList-Backend-Apollo",
         description: {
-            en: "The backend app helps to connect frontend with MongoDB database using GraphQL query language. Provides full CRUD operations for users and tasks. Helps organize pagination, sort and search task by paticular parameters. Build with Node JS and Apollo Server v4.",
-            ua: "Цей бекенд застосунок допомагає поєднати клієнтську частину з базою даних MongoDB за допомогою мови запитів GraphQL. Підтримує повний перелік CRUD операцій для користувачів та їх справ. Допомагає організувати пагінацію, сортування та пошук справ за певними параметрами. Зроблений на Node JS з використанням Apollo Server v4.",
+            en: "The backend app helps to connect frontend with MongoDB database using GraphQL query language. Provides full CRUD operations for users and tasks. Helps organize pagination, sort and search task by paticular parameters. Restore password via email, resize upload avatar image. Build with Node JS and Apollo Server v4.",
+            ua: "Цей бекенд застосунок допомагає поєднати клієнтську частину з базою даних MongoDB за допомогою мови запитів GraphQL. Підтримує повний перелік CRUD операцій для користувачів та їх справ. Допомагає організувати пагінацію, сортування та пошук справ за певними параметрами. Відновлення паролю через пошту, трансформація зображень. Зроблений на Node JS з використанням Apollo Server v4.",
         },
         tags: [
             "Node JS",
@@ -129,6 +138,8 @@ export const projectData: Array<ICard> = [
             "GraphQL",
             "Mongoose",
             "Multer",
+            "Nodemailer",
+            "Sharp",
             "Yup",
             "JWT",
             "Bcrypt",
