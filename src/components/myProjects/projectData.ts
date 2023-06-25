@@ -69,7 +69,7 @@ export const projectData: Array<ICard> = [
     },
     {
         id: 3,
-        title: "Todolist",
+        title: "Todolist - RTK Query REST API",
         subtitle: {
             en: "Easy Todo App",
             ua: "Застосунок для ваших справ",
@@ -78,8 +78,8 @@ export const projectData: Array<ICard> = [
         openLink: "https://mytodolist.fun",
         githubLink: "https://github.com/DKotykhin/TodoList-Frontend-RTK-Query",
         description: {
-            en: "Easy TodoList with full CRUD operations for users and their tasks. Mongo DB for a database. User login/logout, delete and registration. Validation all fields, restore password via email. Sort, search for task. Full description in gitHub.",
-            ua: "Простий застосунок для керування справами. Підтримує повний цикл CRUD операцій для користувачів та їх справ. База даних на Mongo DB. Вхід, вихід, реєстрація та видалення користувачів. Валідація всіх форм, відновлення паролю через пошту. Сортування, пошук для справ. Повний опис на gitHub.",
+            en: "Easy TodoList with full CRUD operations for users and their tasks. REST API, Mongo DB for a database. User login/logout, delete and registration. Validation all fields, restore password via email. Sort, search for task. Full description in gitHub.",
+            ua: "Простий застосунок для керування справами. Підтримує повний цикл CRUD операцій для користувачів та їх справ. База даних на Mongo DB, REST API. Вхід, вихід, реєстрація та видалення користувачів. Валідація всіх форм, відновлення паролю через пошту. Сортування, пошук для справ. Повний опис на gitHub.",
         },
         tags: [
             "React",
@@ -120,6 +120,32 @@ export const projectData: Array<ICard> = [
     },
     {
         id: 5,
+        title: "Todolist - Apollo GraphQL API",
+        subtitle: {
+            en: "Easy Todo App",
+            ua: "Застосунок для ваших справ",
+        },
+        imageArray: todolistArray,
+        openLink: "https://todolist-frontend-graphql.vercel.app",
+        githubLink: "https://github.com/DKotykhin/TodoList-Frontend-GraphQL",
+        description: {
+            en: "Easy TodoList with full CRUD operations for users and their tasks. GraphQL API, Mongo DB for a database. User login/logout, delete and registration. Validation all fields, restore password via email. Sort, search for task. Full description in gitHub.",
+            ua: "Простий застосунок для керування справами. Підтримує повний цикл CRUD операцій для користувачів та їх справ. База даних на Mongo DB, GraphQL API. Вхід, вихід, реєстрація та видалення користувачів. Валідація всіх форм, відновлення паролю через пошту. Сортування, пошук для справ. Повний опис на gitHub.",
+        },
+        tags: [
+            "React",
+            "Redux",
+            "Apollo",
+            "Typescript",
+            "React Hook Form",
+            "MUI",
+            "SASS",
+            "Yup",
+            "EasyMDE",
+        ],
+    },
+    {
+        id: 6,
         title: "Apollo GraphQL Backend for TodoList",
         subtitle: {
             en: "Connect Frontend App with MongoDB",
@@ -146,7 +172,7 @@ export const projectData: Array<ICard> = [
         ],
     },
     {
-        id: 6,
+        id: 7,
         title: "CoffeeDoor - light version",
         subtitle: {
             en: "Coffee and Tea Online Shop on Hygraph CMS",
@@ -174,7 +200,7 @@ export const projectData: Array<ICard> = [
         ],
     },
     {
-        id: 7,
+        id: 8,
         title: "Portfolio",
         subtitle: {
             en: "My Portfolio Project",
