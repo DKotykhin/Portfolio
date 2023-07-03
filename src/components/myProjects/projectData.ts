@@ -1,6 +1,6 @@
-import apolloback from "images/projects/apollo_600x361.webp";
-import nestback from "images/projects/nest_600x361.webp";
-import coffeedoorExpress from "images/projects/coffeedoor_express_600x361.webp";
+import apolloback from "images/projects/apollo.webp";
+import nestback from "images/projects/nest.webp";
+import coffeedoorExpress from "images/projects/coffeedoor-express.webp";
 
 import {
     coffeedoorArray,

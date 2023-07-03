@@ -1,8 +1,8 @@
-import ReactCert from "images/certificates/UC-React_800.webp";
-import TypescriptCert from "images/certificates/UC-Typescript_800.webp";
-import NodeJSCert from "images/certificates/UC-NodeJS_800.webp";
-import NodeJSExpressCert from "images/certificates/UC-NodeJS-Express_800.webp";
-import NestJSCert from "images/certificates/UC-NestJS_800.webp";
+import ReactCert from "images/certificates/UC-React.webp";
+import TypescriptCert from "images/certificates/UC-Typescript.webp";
+import NodeJSCert from "images/certificates//UC-NodeJS.webp";
+import NodeJSExpressCert from "images/certificates/UC-NodeJS-Express.webp";
+import NestJSCert from "images/certificates/UC-NestJS.webp";
 import EnglishCert from "images/certificates/English-certificate.webp";
 
 interface ICertificate {
