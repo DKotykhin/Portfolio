@@ -72,8 +72,8 @@ export const coffeedoorCMSArray = [
 ];
 
 export const todolistArray = [
-    todolist_1,
     todolist_2,
+    todolist_1,
     todolist_3,
     todolist_4,
     todolist_5,
