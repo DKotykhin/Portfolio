@@ -14,18 +14,18 @@ import { ICard } from "./cardTypes";
 export const projectData: Array<ICard> = [
     {
         id: 1,
-        title: "CoffeeDoor - online shop",
+        title: "CoffeeDoor - coffee and tea shop",
         subtitle: {
-            en: "Coffee and Tea Online Shop",
-            ua: "Онлайн магазин кави та чаю",
+            en: "React and Node JS Fullstack app",
+            ua: "React та Node JS Fullstack додаток",
         },
         imageArray: coffeedoorArray,
         openLink: "https://luckycat.pp.ua",
         githubLink:
             "https://github.com/DKotykhin/coffeedoor-frontend-RTK-Query",
         description: {
-            en: "Three languages online coffee, tea and accessories store with user personal page and admin panel for CRUD for shop items and coffeeshop menu. Orders history and update users data on personal page. Mobile friendly.",
-            ua: "Онлайн магазин кави, чаю та кавових аксесуарів. Підтримує три мови. Адаптивний слайдер для товарів. Персональна сторінка користувача для зміни даних та історії замовленнь. Адмін панель для CRUD операцій з товарами магазину та меню кав'ярні. Адаптивний дизайн.",
+            en: "Three languages online coffee, tea and accessories store with user personal page and admin panel for CRUD for shop items and coffeeshop menu. Orders history and update users data on personal page. Google analytics. Mobile friendly.",
+            ua: "Онлайн магазин кави, чаю та кавових аксесуарів. Підтримує три мови. Адаптивний слайдер для товарів. Персональна сторінка користувача для зміни даних та історії замовленнь. Адмін панель для CRUD операцій з товарами магазину та меню кав'ярні. Google аналітика. Адаптивний дизайн.",
         },
         tags: [
             "React",
@@ -44,7 +44,7 @@ export const projectData: Array<ICard> = [
     },
     {
         id: 2,
-        title: "Express JS Backend for Coffeedoor",
+        title: "Node JS Backend for Coffeedoor",
         subtitle: {
             en: "Connect Frontend App with MongoDB",
             ua: "Поєднує клієнтську частину з базою MongoDB",
@@ -69,10 +69,10 @@ export const projectData: Array<ICard> = [
     },
     {
         id: 3,
-        title: "Todolist - RTK Query REST API",
+        title: "Todolist - Easy FullStack Todo App",
         subtitle: {
-            en: "Easy Todo App",
-            ua: "Застосунок для ваших справ",
+            en: "RTK Query REST API",
+            ua: "RTK Query REST API",
         },
         imageArray: todolistArray,
         openLink: "https://mytodolist.fun",
@@ -120,10 +120,10 @@ export const projectData: Array<ICard> = [
     },
     {
         id: 5,
-        title: "Todolist - Apollo GraphQL API",
+        title: "Todolist - Easy FullStack Todo App",
         subtitle: {
-            en: "Easy Todo App",
-            ua: "Застосунок для ваших справ",
+            en: "Apollo GraphQL API",
+            ua: "Apollo GraphQL API",
         },
         imageArray: todolistArray,
         openLink: "https://todolist-frontend-graphql.vercel.app",
@@ -173,23 +173,23 @@ export const projectData: Array<ICard> = [
     },
     {
         id: 7,
-        title: "CoffeeDoor - light version",
+        title: "CoffeeDoor Online Shop-CMS version",
         subtitle: {
-            en: "Coffee and Tea Online Shop on Hygraph CMS",
-            ua: "Онлайн магазин кави та чаю з Hygraph CMS",
+            en: "Use Latest Next 13 and Hygraph CMS",
+            ua: "Використовується Next 13 та Hygraph CMS",
         },
         imageArray: coffeedoorLightArray,
         openLink: "https://coffeedoor.space",
-        githubLink: "https://github.com/DKotykhin/Coffeedoor-next-Hygraph",
+        githubLink: "https://github.com/DKotykhin/Coffeedoor-Next-Hygraph-new",
         description: {
-            en: "Three languages online coffee, tea and accessories store with Next JS for SSR rendering and GraphQL API. Use Hygraph CMS for content placing. Mobile friendly.",
-            ua: "Онлайн магазин кави, чаю та кавових аксесуарів. Підтримує три мови. Використовує Next JS для SSR рендерингу та GraphQL API. Адаптивний слайдер для товарів. Контент розміщений за допомогою Hygraph CMS. Адаптивний дизайн.",
+            en: "Three languages online coffee, tea and accessories store with latest Next 13 for SSR rendering and GraphQL API. Use Hygraph CMS for content placing. Google analytics. Mobile friendly.",
+            ua: "Онлайн магазин кави, чаю та кавових аксесуарів. Підтримує три мови. Використовує Next JS для SSR рендерингу та GraphQL API. Адаптивний слайдер для товарів. Контент розміщений за допомогою Hygraph CMS. Google аналітика. Адаптивний дизайн.",
         },
         tags: [
+            "Next 13",
             "React",
             "Typescript",
-            "Next JS",
-            "Redux",
+            "Zustand",
             "MUI",
             "GraphQL",
             "Hygraph",

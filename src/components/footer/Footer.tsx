@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { useTranslation } from 'react-i18next';
+import { format } from 'date-fns';
 
 import { Typography, Link, Box } from "@mui/material";
 
@@ -33,7 +34,7 @@ const Footer: React.FC = () => {
                 </Link>
             </Box>
             <Typography className={styles.footer__right}>
-                Copyright &copy; 2023 {t('text')}
+                Copyright &copy; {format(new Date(), 'yyyy')} &nbsp;&nbsp;{t('text')}
             </Typography>
         </Box>
     )
