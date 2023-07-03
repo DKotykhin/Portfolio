@@ -6,7 +6,7 @@ import {
     coffeedoorArray,
     todolistArray,
     portfolioArray,
-    coffeedoorLightArray,
+    coffeedoorCMSArray,
 } from "./photoArray";
 
 import { ICard } from "./cardTypes";
@@ -178,7 +178,7 @@ export const projectData: Array<ICard> = [
             en: "Use Latest Next 13 and Hygraph CMS",
             ua: "Використовується Next 13 та Hygraph CMS",
         },
-        imageArray: coffeedoorLightArray,
+        imageArray: coffeedoorCMSArray,
         openLink: "https://coffeedoor.space",
         githubLink: "https://github.com/DKotykhin/Coffeedoor-Next-Hygraph-new",
         description: {
