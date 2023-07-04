@@ -34,11 +34,11 @@ class Skills implements ISkills {
 }
 
 const HTML = new Skills(1, htmlIcon, "HTML");
-const Javascript = new Skills(2, jsIcon, "Javascript");
+const Javascript = new Skills(2, jsIcon, "JavaScript");
 const CSS = new Skills(3, cssIcon, "CSS");
 const React = new Skills(4, reactIcon, "React");
 const Redux = new Skills(5, reduxIcon, "Redux");
-const Typescript = new Skills(6, tsIcon, "Typescript");
+const Typescript = new Skills(6, tsIcon, "TypeScript");
 const NextJS = new Skills(7, nextjsIcon, "Next JS");
 const GraphQL = new Skills(8, graphqlIcon, "GraphQL");
 const NestJS = new Skills(9, nestjsIcon, "Nest JS");
