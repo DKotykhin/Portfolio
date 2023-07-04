@@ -6,10 +6,10 @@ import NavBar from './components/navBar/NavBar';
 import Home from './components/home/Home';
 import AboutMe from './components/aboutMe/AboutMe';
 import Skills from './components/skills/Skills';
-import MyProjects from './components/myProjects/MyProjects';
+import Projects from './components/projects/Projects';
 import Contacts from './components/contacts/Contacts';
 import Footer from './components/footer/Footer';
-import MyCertificates from 'components/myCertificates/MyCertificates';
+import Certificates from 'components/certificates/Certificates';
 
 import styles from './app.module.scss';
 
@@ -27,8 +27,8 @@ const App: React.FC = () => {
                 <Home />
                 <AboutMe />
                 <Skills />
-                <MyCertificates />
-                <MyProjects />
+                <Certificates />
+                <Projects />
                 <Contacts />
             </main>
             <footer>

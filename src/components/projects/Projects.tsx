@@ -9,7 +9,7 @@ import ProjectCard from './card/ProjectCard';
 import { projectData } from './projectData';
 import { titleVariant } from 'animation/variants';
 
-import styles from './myProjects.module.scss';
+import styles from './projects.module.scss';
 
 
 const ProjectsBlock: React.FC = () => {

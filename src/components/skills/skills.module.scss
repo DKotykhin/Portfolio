@@ -32,7 +32,7 @@
                 padding-top: 0;
             }
             .study_textBox {
-                margin-bottom: 50px;
+                margin-bottom: 30px;
                 p {
                     color: $color_lightGrey;
                 }
@@ -40,6 +40,9 @@
                     color: $color_antiqueWhite;
                     font-size: 1.2rem;
                     margin: 15px 0;
+                }
+                .study_cert:hover {
+                    color: $color_antiqueWhite;
                 }
             }
             .hobby_textBox {

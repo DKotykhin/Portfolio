@@ -14,6 +14,10 @@ import sassIcon from "images/skillsIcons/sass.png";
 import materialUiIcon from "images/skillsIcons/materialUi.png";
 import hygraphIcon from "images/skillsIcons/hygraph.webp";
 import mongodbIcon from "images/skillsIcons/mongodb.svg";
+import motionIcon from "images/skillsIcons/framer-motion.svg";
+import swiperIcon from "images/skillsIcons/swiper-logo.svg";
+import reactFormIcon from "images/skillsIcons/react-hook-form.png";
+import expressIcon from "images/skillsIcons/express-js_100.png";
 
 export interface ISkills {
     id: number;
@@ -45,6 +49,10 @@ const SaSS = new Skills(13, sassIcon, "SaSS");
 const MaterialUI = new Skills(14, materialUiIcon, "Material UI");
 const Hygraph = new Skills(15, hygraphIcon, "Hygraph");
 const MongoDB = new Skills(16, mongodbIcon, "Mongo DB");
+const FramerMotion = new Skills(17, motionIcon, "Motion");
+const Swiper = new Skills(18, swiperIcon, "Swiper");
+const ReactHookForms = new Skills(19, reactFormIcon, "ReactForms");
+const Express = new Skills(20, expressIcon, "Express");
 
 export const allSkills: Array<ISkills> = [
     HTML,
@@ -63,4 +71,47 @@ export const allSkills: Array<ISkills> = [
     MaterialUI,
     Hygraph,
     MongoDB,
+    FramerMotion,
+    Swiper,
+    ReactHookForms,
+    Express,
+];
+
+export interface ICert {
+    id: number;
+    text: string;
+    url: string;
+}
+
+export const cert: ICert[] = [
+    {
+        id: 1,
+        text: "cert_1",
+        url: "https://www.udemy.com/course/javascript_full",
+    },
+    {
+        id: 2,
+        text: "cert_2",
+        url: "https://www.udemy.com/course/react-nextjs",
+    },
+    {
+        id: 3,
+        text: "cert_3",
+        url: "https://www.udemy.com/course/modern_typescript",
+    },
+    {
+        id: 4,
+        text: "cert_4",
+        url: "https://www.udemy.com/course/nodejs-start",
+    },
+    {
+        id: 5,
+        text: "cert_5",
+        url: "https://www.udemy.com/course/nodejs-full-guide",
+    },
+    {
+        id: 6,
+        text: "cert_6",
+        url: "https://www.udemy.com/course/nestjs-backend-typescript-node-js",
+    },
 ];

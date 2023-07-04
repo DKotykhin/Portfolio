@@ -10,9 +10,9 @@ import { titleVariant } from 'animation/variants';
 import { certificateData } from './certificateData';
 import CertificateCard from './certificateCard/CertificateCard';
 
-import styles from './myCertificates.module.scss';
+import styles from './certificates.module.scss';
 
-const MyCertificates: React.FC = () => {
+const Certificates: React.FC = () => {
 
     const { t } = useTranslation('certificates');
 
@@ -44,4 +44,4 @@ const MyCertificates: React.FC = () => {
     )
 }
 
-export default MyCertificates;
+export default Certificates;
