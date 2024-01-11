@@ -179,7 +179,7 @@ export const projectData: Array<ICard> = [
             ua: "Використовується Next 13 та Hygraph CMS",
         },
         imageArray: coffeedoorCMSArray,
-        openLink: "https://coffeedoor.space",
+        openLink: "https://coffeedoor.pp.ua",
         githubLink: "https://github.com/DKotykhin/Coffeedoor-Next-Hygraph-new",
         description: {
             en: "Three languages online coffee, tea and accessories store with latest Next 13 for SSR rendering and GraphQL API. Use Hygraph CMS for content placing. Google analytics. Mobile friendly.",
