@@ -3,7 +3,7 @@ import React from 'react';
 import { Box, Typography } from '@mui/material';
 import ZoomInIcon from '@mui/icons-material/ZoomIn';
 
-import styles from './certificareCard.module.scss';
+import styles from './certificateCard.module.scss';
 import CertificateModal from '../certificateModal/CertificateModal';
 
 interface ICertificateCard {

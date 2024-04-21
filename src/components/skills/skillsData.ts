@@ -14,9 +14,9 @@ import sassIcon from "images/skillsIcons/sass.png";
 import materialUiIcon from "images/skillsIcons/materialUi.png";
 import hygraphIcon from "images/skillsIcons/hygraph.webp";
 import mongodbIcon from "images/skillsIcons/mongodb.svg";
-import motionIcon from "images/skillsIcons/framer-motion.svg";
-import swiperIcon from "images/skillsIcons/swiper-logo.svg";
-import reactFormIcon from "images/skillsIcons/react-hook-form.png";
+import vueIcon from "images/skillsIcons/vue.png";
+import nuxtIcon from "images/skillsIcons/nuxt.png";
+import AWSIcon from "images/skillsIcons/AWS.jpeg";
 import expressIcon from "images/skillsIcons/express-js_100.png";
 
 export interface ISkills {
@@ -49,9 +49,9 @@ const SaSS = new Skills(13, sassIcon, "SaSS");
 const MaterialUI = new Skills(14, materialUiIcon, "Material UI");
 const Hygraph = new Skills(15, hygraphIcon, "Hygraph");
 const MongoDB = new Skills(16, mongodbIcon, "Mongo DB");
-const FramerMotion = new Skills(17, motionIcon, "Motion");
-const Swiper = new Skills(18, swiperIcon, "Swiper");
-const ReactHookForms = new Skills(19, reactFormIcon, "ReactForms");
+const FramerMotion = new Skills(17, vueIcon, "Vue JS");
+const Swiper = new Skills(18, nuxtIcon, "Nuxt 3");
+const ReactHookForms = new Skills(19, AWSIcon, "AWS");
 const Express = new Skills(20, expressIcon, "Express");
 
 export const allSkills: Array<ISkills> = [
