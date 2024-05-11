@@ -114,4 +114,9 @@ export const cert: ICert[] = [
         text: "cert_6",
         url: "https://www.udemy.com/course/nestjs-backend-typescript-node-js",
     },
+    {
+        id: 7,
+        text: "cert_7",
+        url: "https://www.udemy.com/course/nestjs-microservices-build-deploy-a-scaleable-backend",
+    },
 ];

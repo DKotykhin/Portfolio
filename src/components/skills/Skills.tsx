@@ -88,9 +88,6 @@ const Skills: React.FC = () => {
                         <Typography>
                             {t('text_23')}
                         </Typography>
-                        <Typography>
-                            {t('text_24')}
-                        </Typography>
                     </Box>
                 </Box>
                 <Box className={styles.skills_block}>

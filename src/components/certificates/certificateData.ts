@@ -6,6 +6,8 @@ import NestJSCert from "images/certificates/UC-NestJS.webp";
 import NextJS13Cert from "images/certificates/UC-NextJS-13.webp";
 import EnglishCert from "images/certificates/English-certificate.webp";
 import DockerCert from "images/certificates/UC-Docker.webp";
+import MasterNestJS from "images/certificates/UC-NestJS-2024.webp";
+import MicroservicesCert from "images/certificates/UC-NestJS-Microservices.webp";
 
 export interface ICertificate {
     id: number;
@@ -31,10 +33,12 @@ const Cert_4 = new Certificate(
     "Node JS (Mongo, GraphQL, MySQL)",
     NodeJSExpressCert, "https://www.udemy.com/course/nodejs-full-guide"
 );
-const Cert_5 = new Certificate(5, "Nest JS Backend", NestJSCert, "https://www.udemy.com/course/nestjs-backend-typescript-node-js");
+const Cert_5 = new Certificate(5, "NestJS Backend", NestJSCert, "https://www.udemy.com/course/nestjs-backend-typescript-node-js");
 const Cert_6 = new Certificate(6, "NextJS 13 + React", NextJS13Cert, "https://www.udemy.com/course/react-nextjs");
 const Cert_7 = new Certificate(7, "Docker - Full course", DockerCert, "https://www.udemy.com/course/docker-ru");
 const Cert_8 = new Certificate(8, "Advanced Business English", EnglishCert, "https://www.englishdom.com/ua");
+const Cert_9 = new Certificate(9, "Master NestJS", MasterNestJS, "https://www.udemy.com/course/master-nestjs-the-javascript-nodejs-framework");
+const Cert_10 = new Certificate(10, "NestJS Microservices", MicroservicesCert, "https://www.udemy.com/course/nestjs-microservices-build-deploy-a-scaleable-backend");
 
 export const certificateData: Array<ICertificate> = [
     Cert_1,
@@ -45,4 +49,6 @@ export const certificateData: Array<ICertificate> = [
     Cert_6,
     Cert_7,
     Cert_8,
+    Cert_9,
+    Cert_10,
 ];
