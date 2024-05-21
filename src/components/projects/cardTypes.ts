@@ -1,3 +1,6 @@
+import { SvgIconTypeMap } from '@mui/material';
+import { OverridableComponent } from '@mui/material/OverridableComponent';
+
 export interface ICard {
     id: number;
     title: string;
@@ -10,8 +13,12 @@ export interface ICard {
         ua: string;
     };
     imageArray: Array<string>;
-    openLink: string;
-    githubLink: string;
+    linkArray: {
+        id: number;
+        title: string;
+        icon: OverridableComponent<SvgIconTypeMap<{}, "svg">> & { muiName: string; };
+        link: string;
+    }[];
     tags: Array<string>;
 }
 

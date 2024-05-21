@@ -1,21 +1,16 @@
 import * as React from 'react';
-
 import { useTranslation } from 'react-i18next';
-
 import { Box, Modal, Typography, Link } from '@mui/material';
 
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LanguageIcon from '@mui/icons-material/Language';
-import ImageSwiper from './ImageSwiper';
-
 import { IModal } from '../cardTypes';
+import ImageSwiper from './ImageSwiper';
 
 import styles from './projectModal.module.scss';
 
 const ProjectModal: React.FC<IModal> = ({ open, handleClose, props }) => {
-    const { title, imageArray, description, openLink, githubLink, tags } = props;
-
-    const { t, i18n } = useTranslation('projects');
+    
+    const { title, imageArray, description, tags, linkArray } = props;
+    const { i18n } = useTranslation('projects');
 
     return (
         <Modal
@@ -39,14 +34,14 @@ const ProjectModal: React.FC<IModal> = ({ open, handleClose, props }) => {
                     }
                 </Box>
                 <Box className={styles.linkBox}>
-                    <Box className={styles.link}>
-                        <LanguageIcon />
-                        <Link href={openLink} target='_blank'>{t('link_1')}</Link>
-                    </Box>
-                    <Box className={styles.link}>
-                        <GitHubIcon />
-                        <Link href={githubLink} target='_blank'>{t('link_2')}</Link>
-                    </Box>
+                    {
+                        linkArray.map((item, i) => (
+                            <Box key={i} className={styles.link}>
+                                <item.icon />
+                                <Link href={item.link} target='_blank'>{item.title}</Link>
+                            </Box>
+                        ))
+                    }
                 </Box>
             </Box>
         </Modal>

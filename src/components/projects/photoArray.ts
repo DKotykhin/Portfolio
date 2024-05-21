@@ -1,14 +1,3 @@
-import coffeedoor_10 from "images/projects/coffeedoor/Coffeedoor_10.webp";
-import coffeedoor_11 from "images/projects/coffeedoor/Coffeedoor_11.webp";
-import coffeedoor_12 from "images/projects/coffeedoor/Coffeedoor_12.webp";
-import coffeedoor_13 from "images/projects/coffeedoor/Coffeedoor_13.webp";
-import coffeedoor_14 from "images/projects/coffeedoor/Coffeedoor_14.webp";
-import coffeedoor_15 from "images/projects/coffeedoor/Coffeedoor_15.webp";
-import coffeedoor_16 from "images/projects/coffeedoor/Coffeedoor_16.webp";
-import coffeedoor_17 from "images/projects/coffeedoor/Coffeedoor_17.webp";
-import coffeedoor_18 from "images/projects/coffeedoor/Coffeedoor_18.webp";
-import coffeedoor_19 from "images/projects/coffeedoor/Coffeedoor_19.webp";
-
 import coffeedoor_1 from "images/projects/coffeedoor_cms/Coffeedoor_1.webp";
 import coffeedoor_2 from "images/projects/coffeedoor_cms/Coffeedoor_2.webp";
 import coffeedoor_3 from "images/projects/coffeedoor_cms/Coffeedoor_3.webp";
@@ -37,27 +26,11 @@ import portfolio_6 from "images/projects/portfolio/Portfolio_6.webp";
 import portfolio_7 from "images/projects/portfolio/Portfolio_7.webp";
 import portfolio_8 from "images/projects/portfolio/Portfolio_8.webp";
 
-export const coffeedoorArray = [
-    coffeedoor_1,
-    coffeedoor_2,
-    coffeedoor_3,
-    coffeedoor_4,
-    coffeedoor_5,
-    coffeedoor_6,
-    coffeedoor_7,
-    coffeedoor_8,
-    coffeedoor_9,
-    coffeedoor_10,
-    coffeedoor_11,
-    coffeedoor_12,
-    coffeedoor_13,
-    coffeedoor_14,
-    coffeedoor_15,
-    coffeedoor_16,
-    coffeedoor_17,
-    coffeedoor_18,
-    coffeedoor_19,
-];
+import cartScootWeb_1 from "images/projects/cartScootWeb/cart-scoot-web-1.jpg";
+import cartScootWeb_2 from "images/projects/cartScootWeb/cart-scoot-web-2.jpg";
+import cartScootWeb_3 from "images/projects/cartScootWeb/cart-scoot-web-3.jpg";
+import cartScootWeb_4 from "images/projects/cartScootWeb/cart-scoot-web-4.jpg";
+import cartScootWeb_5 from "images/projects/cartScootWeb/cart-scoot-web-5.jpg";
 
 export const coffeedoorCMSArray = [
     coffeedoor_1,
@@ -71,7 +44,7 @@ export const coffeedoorCMSArray = [
     coffeedoor_9,
 ];
 
-export const todolistArray = [
+export const todoListArray = [
     todolist_2,
     todolist_1,
     todolist_3,
@@ -91,4 +64,12 @@ export const portfolioArray = [
     portfolio_6,
     portfolio_7,
     portfolio_8,
+];
+
+export const cartScootWebArray = [
+    cartScootWeb_1,
+    cartScootWeb_2,
+    cartScootWeb_3,
+    cartScootWeb_4,
+    cartScootWeb_5,
 ];
