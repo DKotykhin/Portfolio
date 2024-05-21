@@ -189,8 +189,8 @@ export const projectData: Array<ICard> = [
             },
         ],
         description: {
-            en: 'Nest JS API Gateway server for online shop. Full CRUD operations for shop items, menu and users. JWT authentication. SQL database. Swagger for API documentation.',
-            ua: 'Nest JS сервер для онлайн магазину. Повний цикл CRUD операцій для товарів, меню та користувачів. JWT аутентифікація. SQL база даних. Swagger для документації API.',
+            en: 'Nest JS API Gateway server for online shop microservices. Full CRUD operations for shop items, orders, menu and users. JWT role based authentication. Swagger for API documentation.',
+            ua: 'Nest JS сервер для мікросервісів онлайн магазину. Повний цикл CRUD операцій для товарів, замовленньб меню та користувачів. JWT аутентифікація. Swagger для документації API.',
         },
         tags: [
             'Nest JS',

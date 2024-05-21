@@ -12,6 +12,7 @@
     border-radius: 10px;
     @media (max-width: 768px) {
         width: 90%;
+        padding: 20px;
     }
     @media (max-height: 768px) {
         max-height: 90%;
@@ -64,6 +65,7 @@
         .link {
             display: flex;
             align-items: center;
+            margin-bottom: 10px;
             svg {
                 color: $color_antiqueWhite;
             }
