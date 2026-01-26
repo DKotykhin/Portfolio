@@ -41,6 +41,9 @@ const AboutMe: React.FC = () => {
                         <Link href={require("cv/CV_Dmytro_Kotykhin.pdf")} download='CV_Dmytro_Kotykhin.pdf' target='_blank'>
                             <Button className={styles.about_button}>{t('button')}</Button>
                         </Link>
+                        <Link href={require("cv/CV_Dmytro_Kotykhin.pdf")} target='_blank'>
+                            <Button className={styles.about_button_2}>{t('button_2')}</Button>
+                        </Link>
                     </Box>
                 </Box>
             </Container>
