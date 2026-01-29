@@ -18,6 +18,7 @@ const NavBar = (props: Props) => {
     const { window } = props;
 
     const [mobileOpen, setMobileOpen] = React.useState(false);
+    const [langHover, setLangHover] = React.useState(false);
     const { t, i18n } = useTranslation('navBar');
 
     const navItems = [
@@ -90,8 +91,22 @@ const NavBar = (props: Props) => {
                             ))}
                             {
                                 i18n.language === 'en'
-                                    ? <Box onClick={() => i18n.changeLanguage('ua')} className={styles.lang}>Ua</Box>
-                                    : <Box onClick={() => i18n.changeLanguage('en')} className={styles.lang}>En</Box>
+                                    ? <Box
+                                        onClick={() => i18n.changeLanguage('ua')}
+                                        onMouseEnter={() => setLangHover(true)}
+                                        onMouseLeave={() => setLangHover(false)}
+                                        className={styles.lang}
+                                        >
+                                            {langHover ? 'Ua' : 'En'}
+                                    </Box>
+                                    : <Box
+                                        onClick={() => i18n.changeLanguage('en')}
+                                        onMouseEnter={() => setLangHover(true)}
+                                        onMouseLeave={() => setLangHover(false)}
+                                        className={styles.lang}
+                                        >
+                                            {langHover ? 'En' : 'Ua'}
+                                    </Box>
                             }
                         </Box>
                     </Toolbar>
