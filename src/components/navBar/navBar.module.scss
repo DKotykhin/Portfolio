@@ -35,6 +35,10 @@
         .activeLink {
             color: $color_orange;
         }
+        .link:hover {
+            color: $color_orange;
+            transition: 0.4s;
+        }
         .lang {
             cursor: pointer;
             margin-left: 16px;
@@ -42,6 +46,11 @@
             color: $color_lightGrey;
             border: 1px solid $color_lightGrey;
             border-radius: 5px;
+        }
+        .lang:hover {
+            color: #fff;
+            border: 1px solid #fff;
+            transition: 0.4s;
         }
     } 
 }
