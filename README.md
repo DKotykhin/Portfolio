@@ -1,82 +1,75 @@
 # Dmytro Kotykhin - Portfolio
 
-The best way to see my projects
+Personal portfolio SPA showcasing projects, skills, and professional experience.
 
-<img src="https://i.ibb.co/0QQN97m/logo512.png"  width="150" height="150">
+<img src="https://i.ibb.co/0QQN97m/logo512.png" width="150" height="150">
 
+**Live:** [https://dmytro-kotykhin.netlify.app](https://dmytro-kotykhin.netlify.app)
 
-## Features
+---
 
-- React, Typescript - core
-- Material UI, SCSS - styling
-- React scroll to smooth page moving
-- Framer Motion for animation
-- Swiper to show screenshots of the projects
-- React Hook Form for feedback form
-- Yup for form validation
-- EmailJS for email notification
-- Two languages with i18next
-- Google Analitycs
-- Mobile friendly
+## Tech Stack
+
+- **React 18** + **TypeScript** — core framework
+- **Material UI 5** + **SCSS** — styling and responsive layout
+- **Framer Motion** — entrance animations and transitions
+- **Swiper** — image carousels for project screenshots
+- **React Scroll** — smooth anchor-based navigation
+- **React Hook Form** + **Yup** — contact form with validation
+- **EmailJS** — email delivery from the contact form
+- **i18next** — bilingual UI (English / Ukrainian)
+- **React GA4** — Google Analytics 4
+- **date-fns** — date utilities
+
+## Sections
+
+| Section | Description |
+| ------------ | --------------------------------------------------------- |
+| Home | Animated hero introduction |
+| About Me | Professional background |
+| Skills | 20+ technology icons (React, Next.js, Node.js, NestJS, Vue, GraphQL, MongoDB, SQL, etc.) |
+| Certificates | 7 Udemy certificates (JavaScript, React, TypeScript, Node.js, NestJS) |
+| Projects | 10 featured projects with screenshots and tech details |
+| Contacts | Validated contact form with email notification |
 
 ## Environment Variables
 
-To run this project, you will need to add the following environment variables to your .env file
+Create a `.env` file in the project root with:
 
-`REACT_APP_EMAIL_SERVICE_ID`
-`REACT_APP_EMAIL_TEMPLATE_ID`
-`REACT_APP_EMAIL_PUBLIC_KEY`
-`REACT_APP_GOOGLE_DATA_ID`
-
-## Deploy on Netlify
-
-  [https://dmytro-kotykhin.netlify.app](https://dmytro-kotykhin.netlify.app)
-
-  [https://dmytro-kotykhin.space](https://dmytro-kotykhin.space)
+```
+REACT_APP_EMAIL_SERVICE_ID=
+REACT_APP_EMAIL_TEMPLATE_ID=
+REACT_APP_EMAIL_PUBLIC_KEY=
+REACT_APP_GOOGLE_DATA_ID=
+```
 
 ## Run Locally
 
-Clone the project
-
 ```bash
-  git clone https://github.com/DKotykhin/Portfolio.git
-```
+# Clone the repository
+git clone https://github.com/DKotykhin/Portfolio.git
+cd Portfolio
 
-Go to the project directory
+# Install dependencies
+npm install
 
-```bash
-  cd my-project
-```
-
-Install dependencies
-
-```bash
-  npm install
-```
-
-Start the server
-
-```bash
+# Start development server
 npm start
-# or
-yarn
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Color Reference
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| Firm antiqueWhite | ![#faebd7](https://via.placeholder.com/10/faebd7?text=+) #faebd7 |
-| Firm lightGrey | ![#808080](https://via.placeholder.com/10/808080?text=+) #808080 |
-| Firm orange | ![#dc965a](https://via.placeholder.com/10/dc965a?text=+) #dc965a |
-| Firm main | ![#131416](https://via.placeholder.com/10/131416?text=+) #131416 |
-| Firm grey | ![#1c1d24](https://via.placeholder.com/10/1c1d24?text=+) #1c1d24 |
-| Firm dark | ![#0e0f10](https://via.placeholder.com/10/0e0f10?text=+) #0e0f10 |
+| antiqueWhite | ![#faebd7](https://placehold.co/15x15/faebd7/faebd7.png) `#faebd7` |
+| lightGrey | ![#808080](https://placehold.co/15x15/808080/808080.png) `#808080` |
+| orange | ![#dc965a](https://placehold.co/15x15/dc965a/dc965a.png) `#dc965a` |
+| main | ![#131416](https://placehold.co/15x15/131416/131416.png) `#131416` |
+| grey | ![#1c1d24](https://placehold.co/15x15/1c1d24/1c1d24.png) `#1c1d24` |
+| dark | ![#0e0f10](https://placehold.co/15x15/0e0f10/0e0f10.png) `#0e0f10` |
 
 ## Author
 
-- [@DKotykhin](https://github.com/DKotykhin)
+[@DKotykhin](https://github.com/DKotykhin)
